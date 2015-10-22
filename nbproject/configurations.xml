@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="TCPIP" projectFiles="true">
+        <itemPath>../tcpip/ETH97J60.h</itemPath>
+        <itemPath>../tcpip/announce.h</itemPath>
+        <itemPath>../tcpip/arc4.h</itemPath>
+        <itemPath>../tcpip/arp.h</itemPath>
+        <itemPath>../tcpip/auto_ip.h</itemPath>
+        <itemPath>../tcpip/berkeley_api.h</itemPath>
+        <itemPath>../tcpip/big_int.h</itemPath>
+        <itemPath>../tcpip/ddns.h</itemPath>
+        <itemPath>../tcpip/delay.h</itemPath>
+        <itemPath>../tcpip/dhcp.h</itemPath>
+        <itemPath>../tcpip/dns.h</itemPath>
+        <itemPath>../tcpip/enc28j60.h</itemPath>
+        <itemPath>../tcpip/file_system.h</itemPath>
+        <itemPath>../tcpip/ftp.h</itemPath>
+        <itemPath>../tcpip/hashes.h</itemPath>
+        <itemPath>../tcpip/helpers.h</itemPath>
+        <itemPath>../tcpip/http2.h</itemPath>
+        <itemPath>../tcpip/http2_mdd.h</itemPath>
+        <itemPath>../tcpip/icmp.h</itemPath>
+        <itemPath>../tcpip/ip.h</itemPath>
+        <itemPath>../tcpip/lcd_blocking.h</itemPath>
+        <itemPath>../tcpip/mac.h</itemPath>
+        <itemPath>../tcpip/mpfs2.h</itemPath>
+        <itemPath>../tcpip/nbns.h</itemPath>
+        <itemPath>../tcpip/random.h</itemPath>
+        <itemPath>../tcpip/reboot.h</itemPath>
+        <itemPath>../tcpip/rsa.h</itemPath>
+        <itemPath>../tcpip/smtp.h</itemPath>
+        <itemPath>../tcpip/sntp.h</itemPath>
+        <itemPath>../tcpip/spi_eeprom.h</itemPath>
+        <itemPath>../tcpip/spi_flash.h</itemPath>
+        <itemPath>../tcpip/spi_ram.h</itemPath>
+        <itemPath>../tcpip/ssl.h</itemPath>
+        <itemPath>../tcpip/ssl_client_size.h</itemPath>
+        <itemPath>../tcpip/stack_task.h</itemPath>
+        <itemPath>../tcpip/system.h</itemPath>
+        <itemPath>../tcpip/system_config.h</itemPath>
+        <itemPath>../tcpip/tcp.h</itemPath>
+        <itemPath>../tcpip/tcp_performance_test.h</itemPath>
+        <itemPath>../tcpip/tcpip.h</itemPath>
+        <itemPath>../tcpip/tcpip_config.h</itemPath>
+        <itemPath>../tcpip/tcpip_types.h</itemPath>
+        <itemPath>../tcpip/telnet.h</itemPath>
+        <itemPath>../tcpip/tftp.h</itemPath>
+        <itemPath>../tcpip/tick.h</itemPath>
+        <itemPath>../tcpip/uart.h</itemPath>
+        <itemPath>../tcpip/uart_to_tcp_bridge.h</itemPath>
+        <itemPath>../tcpip/udp.h</itemPath>
+        <itemPath>../tcpip/udp_performance_test.h</itemPath>
+        <itemPath>../tcpip/zero_conf_helper.h</itemPath>
+        <itemPath>../tcpip/zero_conf_link_local.h</itemPath>
+        <itemPath>../tcpip/zero_conf_link_multicast_dns.h</itemPath>
+      </logicalFolder>
+      <itemPath>SLCD/slcd.h</itemPath>
+      <itemPath>Persistence.h</itemPath>
+      <itemPath>Device.h</itemPath>
+      <itemPath>IR.h</itemPath>
+      <itemPath>LCD.h</itemPath>
+      <itemPath>SLCD/delays.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="SLCD" displayName="SLCD" projectFiles="true">
+        <itemPath>SLCD/readaddr.c</itemPath>
+        <itemPath>SLCD/readdata.c</itemPath>
+        <itemPath>SLCD/setcgram.c</itemPath>
+        <itemPath>SLCD/setddram.c</itemPath>
+        <itemPath>SLCD/writdata.c</itemPath>
+        <itemPath>SLCD/busyslcd.c</itemPath>
+        <itemPath>SLCD/openslcd.c</itemPath>
+        <itemPath>SLCD/putsslcd.c</itemPath>
+        <itemPath>SLCD/wcmdslcd.c</itemPath>
+        <itemPath>SLCD/putrslcd.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="TCPIP" projectFiles="true">
+        <itemPath>../tcpip/ETH97J60.c</itemPath>
+        <itemPath>../tcpip/announce.c</itemPath>
+        <itemPath>../tcpip/arc4.c</itemPath>
+        <itemPath>../tcpip/arp.c</itemPath>
+        <itemPath>../tcpip/auto_ip.c</itemPath>
+        <itemPath>../tcpip/berkeley_api.c</itemPath>
+        <itemPath>../tcpip/big_int.c</itemPath>
+        <itemPath>../tcpip/ddns.c</itemPath>
+        <itemPath>../tcpip/delay.c</itemPath>
+        <itemPath>../tcpip/dhcp_client.c</itemPath>
+        <itemPath>../tcpip/dhcp_server.c</itemPath>
+        <itemPath>../tcpip/dns_client.c</itemPath>
+        <itemPath>../tcpip/dns_server.c</itemPath>
+        <itemPath>../tcpip/file_system.c</itemPath>
+        <itemPath>../tcpip/ftp.c</itemPath>
+        <itemPath>../tcpip/hashes.c</itemPath>
+        <itemPath>../tcpip/helpers.c</itemPath>
+        <itemPath>../tcpip/http2.c</itemPath>
+        <itemPath>../tcpip/icmp.c</itemPath>
+        <itemPath>../tcpip/ip.c</itemPath>
+        <itemPath>../tcpip/lcd_blocking.c</itemPath>
+        <itemPath>../tcpip/mpfs2.c</itemPath>
+        <itemPath>../tcpip/nbns.c</itemPath>
+        <itemPath>../tcpip/random.c</itemPath>
+        <itemPath>../tcpip/reboot.c</itemPath>
+        <itemPath>../tcpip/rsa.c</itemPath>
+        <itemPath>../tcpip/smtp.c</itemPath>
+        <itemPath>../tcpip/sntp.c</itemPath>
+        <itemPath>../tcpip/spi_eeprom.c</itemPath>
+        <itemPath>../tcpip/spi_flash.c</itemPath>
+        <itemPath>../tcpip/spi_ram.c</itemPath>
+        <itemPath>../tcpip/ssl.c</itemPath>
+        <itemPath>../tcpip/stack_task.c</itemPath>
+        <itemPath>../tcpip/tcp.c</itemPath>
+        <itemPath>../tcpip/tcp_performance_test.c</itemPath>
+        <itemPath>../tcpip/telnet.c</itemPath>
+        <itemPath>../tcpip/tftp.c</itemPath>
+        <itemPath>../tcpip/tick.c</itemPath>
+        <itemPath>../tcpip/uart.c</itemPath>
+        <itemPath>../tcpip/uart_to_tcp_bridge.c</itemPath>
+        <itemPath>../tcpip/udp.c</itemPath>
+        <itemPath>../tcpip/udp_performance_test.c</itemPath>
+        <itemPath>../tcpip/zero_conf_helper.c</itemPath>
+        <itemPath>../tcpip/zero_conf_link_local.c</itemPath>
+        <itemPath>../tcpip/zero_conf_link_multicast_dns.c</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+      <itemPath>LCDDelay.c</itemPath>
+      <itemPath>LCD.c</itemPath>
+      <itemPath>Persistence.c</itemPath>
+      <itemPath>Device.c</itemPath>
+      <itemPath>IR.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>SLCD</Elem>
+    <Elem>../tcpip</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F67J60</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>1.33</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="asmlist" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="extra-include-directories" value="..\tcpip"/>
+        <property key="identifier-length" value="255"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="true"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-global" value="true"/>
+        <property key="optimization-invariant-enable" value="false"/>
+        <property key="optimization-invariant-value" value="16"/>
+        <property key="optimization-level" value="9"/>
+        <property key="optimization-set" value="default"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="0"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="true"/>
+        <property key="calibrate-oscillator-value" value=""/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="true"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+      </HI-TECH-LINK>
+      <PICkit3PlatformTool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="Freeze Peripherals" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x1fff7"/>
+        <property key="memories.programmemory.partition2" value="true"/>
+        <property key="memories.programmemory.partition2.end"
+                  value="${memories.programmemory.partition2.end.value}"/>
+        <property key="memories.programmemory.partition2.start"
+                  value="${memories.programmemory.partition2.start.value}"/>
+        <property key="memories.programmemory.start" value="0x0"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x1fff7"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x0"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="compiled"/>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>

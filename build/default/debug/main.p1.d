@@ -1,0 +1,25 @@
+ build/default/debug/main.d  \
+ build/default/debug/main.p1:  \
+ main.c  \
+../tcpip/ip.h  \
+../tcpip/tcpip_config.h  \
+../tcpip/eth97j60.h  \
+SLCD/slcd.h  \
+../tcpip/helpers.h  \
+Persistence.h  \
+../tcpip/stack_task.h  \
+../tcpip/arp.h  \
+../tcpip/system_config.h  \
+../tcpip/tcp.h  \
+LCD.h  \
+../tcpip/spi_flash.h  \
+../tcpip/tcpip_types.h  \
+IR.h  \
+../tcpip/delay.h  \
+../tcpip/tick.h  \
+../tcpip/spi_ram.h  \
+../tcpip/tcpip.h  \
+../tcpip/spi_eeprom.h  \
+../tcpip/system.h  \
+Device.h  \
+../tcpip/mac.h 

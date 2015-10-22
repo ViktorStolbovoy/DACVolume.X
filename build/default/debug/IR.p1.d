@@ -1,0 +1,22 @@
+ build/default/debug/IR.d  \
+ build/default/debug/IR.p1:  \
+ IR.c  \
+../tcpip/ip.h  \
+../tcpip/tcpip_config.h  \
+../tcpip/eth97j60.h  \
+SLCD/slcd.h  \
+../tcpip/helpers.h  \
+../tcpip/stack_task.h  \
+../tcpip/arp.h  \
+../tcpip/system_config.h  \
+../tcpip/tcp.h  \
+../tcpip/spi_flash.h  \
+../tcpip/tcpip_types.h  \
+../tcpip/delay.h  \
+../tcpip/tick.h  \
+../tcpip/spi_ram.h  \
+../tcpip/tcpip.h  \
+../tcpip/spi_eeprom.h  \
+../tcpip/system.h  \
+Device.h  \
+../tcpip/mac.h 

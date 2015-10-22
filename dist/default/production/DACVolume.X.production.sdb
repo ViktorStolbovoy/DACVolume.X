@@ -1,0 +1,4482 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F67J60 ]
+[d frameptr 4065 ]
+"288 D:\Prj\PIC/tcpip/ETH97J60.c
+[e E5595 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"424 D:\Prj\PIC/tcpip/arp.c
+[e E7055 . `uc
+SM_ARP_IDLE 0
+SM_ARP_REPLY 1
+]
+"69 D:\Prj\PIC/tcpip/stack_task.c
+[e E7039 . `uc
+SM_STACK_IDLE 0
+SM_STACK_MAC 1
+SM_STACK_IP 2
+SM_STACK_ARP 3
+SM_STACK_TCP 4
+SM_STACK_UDP 5
+]
+"204 D:\Prj\PIC/tcpip/tcp.c
+[e E6867 . `uc
+TCP_GET_DNS_MODULE 0
+TCP_DNS_RESOLVE 1
+TCP_GATEWAY_SEND_ARP 2
+TCP_GATEWAY_GET_ARP 3
+TCP_LISTEN 4
+TCP_SYN_SENT 5
+TCP_SYN_RECEIVED 6
+TCP_ESTABLISHED 7
+TCP_FIN_WAIT_1 8
+TCP_FIN_WAIT_2 9
+TCP_CLOSING 10
+TCP_CLOSE_WAIT 11
+TCP_LAST_ACK 12
+TCP_CLOSED 13
+TCP_CLOSED_BUT_RESERVED 14
+]
+"84 D:\Prj\PIC\DACVolume.X\main.c
+[e E5634 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"240
+[e E7159 _TCPServerState `uc
+SM_HOME 0
+SM_LISTENING 1
+SM_CLOSING 2
+]
+"262 D:\Prj\PIC/tcpip/arp.c
+[v _ARPSendPkt ARPSendPkt `(uc  1 e 1 0 ]
+"320
+[v _ARPPut ARPPut `(uc  1 s 1 ARPPut ]
+"374
+[v _ARPInit ARPInit `(v  1 e 0 0 ]
+"413
+[v _ARPProcess ARPProcess `(uc  1 e 1 0 ]
+"569
+[v _ARPResolve ARPResolve `(v  1 e 0 0 ]
+"654
+[v _ARPIsResolved ARPIsResolved `(uc  1 e 1 0 ]
+"688
+[v _SwapARPPacket SwapARPPacket `(v  1 e 0 0 ]
+"45 D:\Prj\PIC/tcpip/delay.c
+[v _DelayMs DelayMs `(v  1 e 0 0 ]
+"145 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACInit MACInit `(v  1 e 0 0 ]
+"255
+[v _MACIsLinked MACIsLinked `(uc  1 e 1 0 ]
+"285
+[v _MACIsTxReady MACIsTxReady `(uc  1 e 1 0 ]
+"321
+[v _MACDiscardRx MACDiscardRx `(v  1 e 0 0 ]
+"371
+[v _MACGetFreeRxSize MACGetFreeRxSize `(ui  1 e 2 0 ]
+"429
+[v _MACGetHeader MACGetHeader `(uc  1 e 1 0 ]
+"554
+[v _MACPutHeader MACPutHeader `(v  1 e 0 0 ]
+"600
+[v _MACFlush MACFlush `(v  1 e 0 0 ]
+"671
+[v _MACSetReadPtrInRx MACSetReadPtrInRx `(v  1 e 0 0 ]
+"705
+[v _MACSetWritePtr MACSetWritePtr `(us  1 e 2 0 ]
+"730
+[v _MACSetReadPtr MACSetReadPtr `(us  1 e 2 0 ]
+"759
+[v _MACCalcRxChecksum MACCalcRxChecksum `(ui  1 e 2 0 ]
+"880
+[v _CalcIPBufferChecksum CalcIPBufferChecksum `(ui  1 e 2 0 ]
+"954
+[v _MACMemCopyAsync MACMemCopyAsync `(v  1 e 0 0 ]
+"1056
+[v _MACIsMemCopyDone MACIsMemCopyDone `(uc  1 e 1 0 ]
+"1079
+[v _MACGet MACGet `(uc  1 e 1 0 ]
+"1108
+[v _MACGetArray MACGetArray `(ui  1 e 2 0 ]
+"1161
+[v _MACPut MACPut `(v  1 e 0 0 ]
+"1194
+[v _MACPutArray MACPutArray `(v  1 e 0 0 ]
+"1211
+[v _MACPutROMArray MACPutROMArray `(v  1 e 0 0 ]
+"121 D:\Prj\PIC/tcpip/eth97j60.h
+"373 D:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h
+"377
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"382 D:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+"126 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1364 . 2 `uc 1 . 1 0 :8:0 
+`uc 1 PDPXMD 1 1 :1:0 
+`uc 1 . 1 1 :7:1 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"133 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1368 . 2 `uc 1 . 1 0 :2:0 
+`uc 1 LLSTAT 1 0 :1:2 
+`uc 1 . 1 0 :5:3 
+`uc 1 . 1 1 :8:0 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"141 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1373 . 2 `uc 1 . 1 0 :4:0 
+`uc 1 RXAPDIS 1 0 :1:4 
+`uc 1 . 1 0 :3:5 
+`uc 1 HDLDIS 1 1 :1:0 
+`uc 1 . 1 1 :5:1 
+`uc 1 FRCLNK 1 1 :1:6 
+`uc 1 . 1 1 :1:7 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"152 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1381 . 2 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :2:0 
+`uc 1 LSTAT 1 1 :1:2 
+`uc 1 COLSTAT 1 1 :1:3 
+`uc 1 RXSTAT 1 1 :1:4 
+`uc 1 TXSTAT 1 1 :1:5 
+`uc 1 . 1 1 :2:6 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"163 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1389 . 2 `uc 1 . 1 0 :1:0 
+`uc 1 PGEIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 PLNKIE 1 0 :1:4 
+`uc 1 . 1 0 :3:5 
+`uc 1 . 1 1 :8:0 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"173 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1396 . 2 `uc 1 . 1 0 :2:0 
+`uc 1 PGIF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PLNKIF 1 0 :1:4 
+`uc 1 . 1 0 :3:5 
+`uc 1 . 1 1 :8:0 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"183 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1403 . 2 `uc 1 . 1 0 :1:0 
+`uc 1 STRCH 1 0 :1:1 
+`uc 1 LFRQ0 1 0 :1:2 
+`uc 1 LFRQ1 1 0 :1:3 
+`uc 1 LBCFG0 1 0 :1:4 
+`uc 1 LBCFG1 1 0 :1:5 
+`uc 1 LBCFG2 1 0 :1:6 
+`uc 1 LBCFG3 1 0 :1:7 
+`uc 1 LACFG0 1 1 :1:0 
+`uc 1 LACFG1 1 1 :1:1 
+`uc 1 LACFG2 1 1 :1:2 
+`uc 1 LACFG3 1 1 :1:3 
+`uc 1 . 1 1 :4:4 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+"198 D:\Prj\PIC/tcpip/eth97j60.h
+[s S1417 . 2 `uc 1 . 1 0 :1:0 
+`uc 1 STRCH 1 0 :1:1 
+`uc 1 LFRQ 1 0 :2:2 
+`uc 1 LBCFG 1 0 :4:4 
+`uc 1 LACFG 1 1 :4:0 
+`uc 1 . 1 1 :4:4 
+]
+"1246 D:\Prj\PIC/tcpip/ETH97J60.c
+[u S1424 . 2 `us 1 Val 2 0 `S519 1 VAL 2 0 `S1364 1 PHCON1bits 2 0 `S1368 1 PHSTAT1bits 2 0 `S1373 1 PHCON2bits 2 0 `S1381 1 PHSTAT2bits 2 0 `S1389 1 PHIEbits 2 0 `S1396 1 PHIRbits 2 0 `S1403 1 PHLCONbits 2 0 `S1417 1 PHLCONbits2 2 0 ]
+[v _ReadPHYReg ReadPHYReg `(S1424  1 e 2 0 ]
+"1288
+[v _WritePHYReg WritePHYReg `(v  1 e 0 0 ]
+"1355
+[v _MACPowerDown MACPowerDown `(v  1 e 0 0 ]
+"1392
+[v _MACPowerUp MACPowerUp `(v  1 e 0 0 ]
+"84 D:\Prj\PIC/tcpip/helpers.c
+[v _LFSRSeedRand LFSRSeedRand `(ul  1 e 4 0 ]
+"142
+[v _LFSRRand LFSRRand `(ui  1 e 2 0 ]
+"196
+[v _GenerateRandomDWORD GenerateRandomDWORD `(ul  1 e 4 0 ]
+"428
+[v _StringToIPAddress StringToIPAddress `(uc  1 e 1 0 ]
+"525
+[v _ROMStringToIPAddress ROMStringToIPAddress `(uc  1 e 1 0 ]
+"812
+[v _uitoa uitoa `(v  1 e 0 0 ]
+"916
+[v _hexatob hexatob `(uc  1 e 1 0 ]
+"959
+[v _btohexa_high btohexa_high `(uc  1 e 1 0 ]
+"985
+[v _btohexa_low btohexa_low `(uc  1 e 1 0 ]
+"1015
+[v _stricmppgm2ram stricmppgm2ram `(c  1 e 1 0 ]
+"1071
+[v _swaps swaps `(ui  1 e 2 0 ]
+"1103
+[v _swapl swapl `(ul  1 e 4 0 ]
+"1146
+[v _CalcIPChecksum CalcIPChecksum `(ui  1 e 2 0 ]
+"1201
+[v _strupr strupr `(*.39uc  1 e 2 0 ]
+"1252
+[v _leftRotateDWORD leftRotateDWORD `(ul  1 e 4 0 ]
+"1323
+[v _FormatNetBIOSName FormatNetBIOSName `(v  1 e 0 0 ]
+"1373
+[v _strnchr strnchr `(*.39uc  1 e 2 0 ]
+"1420
+[v _strncpy_m strncpy_m `(ui  1 e 2 0 ]
+"118 D:\Prj\PIC/tcpip/ip.c
+[v _IPGetHeader IPGetHeader `(uc  1 e 1 0 ]
+"234
+[v _IPPutHeader IPPutHeader `(ui  1 e 2 0 ]
+"281
+[v _IPSetRxBuffer IPSetRxBuffer `(v  1 e 0 0 ]
+"288
+[v _SwapIPHeader SwapIPHeader `(v  1 s 0 SwapIPHeader ]
+"94 D:\Prj\PIC/tcpip/stack_task.c
+[v _StackInit StackInit `(v  1 e 0 0 ]
+"203
+[v _StackTask StackTask `(v  1 e 0 0 ]
+"414
+[v _StackApplications StackApplications `(v  1 e 0 0 ]
+"257 D:\Prj\PIC/tcpip/tcp.c
+[v _SyncTCBStub SyncTCBStub `(v  1 s 0 SyncTCBStub ]
+"288
+[v _SyncTCB SyncTCB `(v  1 s 0 SyncTCB ]
+"332
+[v _TCPInit TCPInit `(v  1 e 0 0 ]
+"553
+[v _TCPOpen TCPOpen `(uc  1 e 1 0 ]
+"686
+[v _TCPWasReset TCPWasReset `(uc  1 e 1 0 ]
+"733
+[v _TCPIsConnected TCPIsConnected `(uc  1 e 1 0 ]
+"788
+[v _TCPDisconnect TCPDisconnect `(v  1 e 0 0 ]
+"919
+[v _TCPClose TCPClose `(v  1 e 0 0 ]
+"183 D:\Prj\PIC/tcpip/tcp.h
+"71 D:\Prj\PIC/tcpip/stack_task.h
+"98 D:\Prj\PIC/tcpip/tcpip_types.h
+"103
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"956 D:\Prj\PIC/tcpip/tcp.c
+"108 D:\Prj\PIC/tcpip/tcpip_types.h
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+"956 D:\Prj\PIC/tcpip/tcp.c
+"115 D:\Prj\PIC/tcpip/tcpip_types.h
+"373 D:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h
+"377
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"956 D:\Prj\PIC/tcpip/tcp.c
+"382 D:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+"956 D:\Prj\PIC/tcpip/tcp.c
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+"120 D:\Prj\PIC/tcpip/tcpip_types.h
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+"956 D:\Prj\PIC/tcpip/tcp.c
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+"62 D:\Prj\PIC/tcpip/stack_task.h
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+"956 D:\Prj\PIC/tcpip/tcp.c
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[s S5843 . 12 `S2369 1 remote 10 0 `S519 1 remotePort 2 10 ]
+[v _TCPGetRemoteInfo TCPGetRemoteInfo `(*.39S5843  1 e 2 0 ]
+"1006
+[v _TCPFlush TCPFlush `(v  1 e 0 0 ]
+"1048
+[v _TCPIsPutReady TCPIsPutReady `(ui  1 e 2 0 ]
+"1110
+[v _TCPPut TCPPut `(uc  1 e 1 0 ]
+"1192
+[v _TCPPutArray TCPPutArray `(ui  1 e 2 0 ]
+"1311
+[v _TCPPutROMArray TCPPutROMArray `(ui  1 e 2 0 ]
+"1435
+[v _TCPPutString TCPPutString `(*.39uc  1 e 2 0 ]
+"1470
+[v _TCPPutROMString TCPPutROMString `(*.39Cuc  1 e 2 0 ]
+"1492
+[v _TCPGetTxFIFOFull TCPGetTxFIFOFull `(ui  1 e 2 0 ]
+"1536
+[v _TCPDiscard TCPDiscard `(v  1 e 0 0 ]
+"1573
+[v _TCPIsGetReady TCPIsGetReady `(ui  1 e 2 0 ]
+"1607
+[v _TCPGet TCPGet `(uc  1 e 1 0 ]
+"1661
+[v _TCPGetArray TCPGetArray `(ui  1 e 2 0 ]
+"1730
+[v _TCPGetRxFIFOFree TCPGetRxFIFOFree `(ui  1 e 2 0 ]
+"1801
+[v _TCPPeekArray TCPPeekArray `(ui  1 e 2 0 ]
+"1871
+[v _TCPPeek TCPPeek `(uc  1 e 1 0 ]
+"1930
+[v _TCPFindArrayEx TCPFindArrayEx `(ui  1 e 2 0 ]
+"2111
+[v _TCPFindROMArrayEx TCPFindROMArrayEx `(ui  1 e 2 0 ]
+"2290
+[v _TCPFindEx TCPFindEx `(ui  1 e 2 0 ]
+"2323
+[v _TCPTick TCPTick `(v  1 e 0 0 ]
+"2781
+[v _TCPProcess TCPProcess `(uc  1 e 1 0 ]
+"2898
+[v _SendTCP SendTCP `(v  1 s 0 SendTCP ]
+"3180
+[v _FindMatchingSocket FindMatchingSocket `(uc  1 s 1 FindMatchingSocket ]
+"3361
+[v _SwapTCPHeader SwapTCPHeader `(v  1 s 0 SwapTCPHeader ]
+"3395
+[v _CloseSocket CloseSocket `(v  1 s 0 CloseSocket ]
+"3477
+[v _GetMaxSegSizeOption GetMaxSegSizeOption `(ui  1 s 2 GetMaxSegSizeOption ]
+"3570
+[v _HandleTCPSeg HandleTCPSeg `(v  1 s 0 HandleTCPSeg ]
+"4319
+[v _TCPAdjustFIFOSize TCPAdjustFIFOSize `(uc  1 e 1 0 ]
+"4510
+[v _TCPRAMCopy TCPRAMCopy `(v  1 s 0 TCPRAMCopy ]
+"4654
+[v _TCPRAMCopyROM TCPRAMCopyROM `(v  1 s 0 TCPRAMCopyROM ]
+"79 D:\Prj\PIC/tcpip/tick.c
+[v _TickInit TickInit `(v  1 e 0 0 ]
+"140
+[v _GetTickCopy GetTickCopy `(v  1 s 0 GetTickCopy ]
+[v i2_GetTickCopy GetTickCopy `(v  1 s 0 i2_GetTickCopy ]
+"254
+[v _TickGet TickGet `(ul  1 e 4 0 ]
+[v i2_TickGet TickGet `(ul  1 e 4 0 ]
+"290
+[v _TickGetDiv256 TickGetDiv256 `(ul  1 e 4 0 ]
+"327
+[v _TickGetDiv64K TickGetDiv64K `(ul  1 e 4 0 ]
+"368
+[v _TickConvertToMilliseconds TickConvertToMilliseconds `(ul  1 e 4 0 ]
+"391
+[v _TickUpdate TickUpdate `(v  1 e 0 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"33 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"42 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"37 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+"31 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"32 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+[v i2___awtoft __awtoft `(f  1 e 3 0 ]
+"409 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+[v i2_fround fround `(d  1 s 3 i2_fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+[v i2_scale scale `(d  1 s 3 i2_scale ]
+"492
+[v _sprintf sprintf `(i  1 e 2 0 ]
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+"63 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"49 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+[v i2__div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+"20 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"43 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+[v i2___ftadd __ftadd `(f  1 e 3 0 ]
+"49 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+[v i2___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+[v i2__tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+[v i2___ftmul __ftmul `(f  1 e 3 0 ]
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+[v i2___ftneg __ftneg `(f  1 e 3 0 ]
+"20 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+[v i2___ftsub __ftsub `(f  1 e 3 0 ]
+"44 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+[v i2___fttol __fttol `(l  1 e 4 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+[v i2_isdigit isdigit `(b  1 e 0 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"27 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+[v i2___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+[v i2___llmod __llmod `(ul  1 e 4 0 ]
+"30 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"35 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+[v i2___lltoft __lltoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"30 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"28 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+[v i2___lwtoft __lwtoft `(f  1 e 3 0 ]
+"3 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+[v i2_memcmp memcmp `(i  1 e 2 0 ]
+"11 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c
+[v _strncpy strncpy `(*.39uc  1 e 2 0 ]
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asfladd.c
+[v ___asfladd __asfladd `(d  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asfldiv.c
+[v ___asfldiv __asfldiv `(d  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asflmul.c
+[v ___asflmul __asflmul `(d  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asflsub.c
+[v ___asflsub __asflsub `(d  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftadd.c
+[v ___asftadd __asftadd `(f  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftdiv.c
+[v ___asftdiv __asftdiv `(f  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftmul.c
+[v ___asftmul __asftmul `(f  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftsub.c
+[v ___asftsub __asftsub `(f  1 e 3 0 ]
+"6 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\aslmul.c
+[v ___aslmul __aslmul `(ul  1 e 4 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+[v i2_Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+[v i2_Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+"59 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\EraseFlash.c
+[v _EraseFlash EraseFlash `(v  1 e 0 0 ]
+[v i2_EraseFlash EraseFlash `(v  1 e 0 0 ]
+"23 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\ReadFlash.c
+[v _ReadFlash ReadFlash `(v  1 e 0 0 ]
+[v i2_ReadFlash ReadFlash `(v  1 e 0 0 ]
+"119 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\WriteBlockFlash.c
+[v _WriteBlockFlash WriteBlockFlash `(v  1 e 0 0 ]
+[v i2_WriteBlockFlash WriteBlockFlash `(v  1 e 0 0 ]
+"64 D:\Prj\PIC\DACVolume.X\Device.c
+[v _DbToCode DbToCode `(ui  1 e 2 0 ]
+[v i2_DbToCode DbToCode `(ui  1 e 2 0 ]
+"161
+[v _UpdateMasterVolume UpdateMasterVolume `T(v  1 e 0 0 ]
+[v i2_UpdateMasterVolume UpdateMasterVolume `T(v  1 e 0 0 ]
+"173
+[v _ChangeMasterVolume ChangeMasterVolume `(v  1 e 0 0 ]
+"192
+[v _SendDataToDeviceCh SendDataToDeviceCh `(v  1 e 0 0 ]
+[v i2_SendDataToDeviceCh SendDataToDeviceCh `(v  1 e 0 0 ]
+"224
+[v _SendVolumeToDevice SendVolumeToDevice `(v  1 e 0 0 ]
+[v i2_SendVolumeToDevice SendVolumeToDevice `(v  1 e 0 0 ]
+"234
+[v _UpdateSampleRate UpdateSampleRate `(v  1 e 0 0 ]
+[v i2_UpdateSampleRate UpdateSampleRate `(v  1 e 0 0 ]
+"283
+[v _PowerOn PowerOn `(v  1 e 0 0 ]
+[v i2_PowerOn PowerOn `(v  1 e 0 0 ]
+"304
+[v _PowerOff PowerOff `(v  1 e 0 0 ]
+[v i2_PowerOff PowerOff `(v  1 e 0 0 ]
+"35 D:\Prj\PIC\DACVolume.X\IR.c
+[v _InitrIR InitrIR `T(v  1 e 0 0 ]
+"44
+[v _ReInitTimer ReInitTimer `T(v  1 e 0 0 ]
+"56
+[v _ProcessIRCode ProcessIRCode `T(v  1 e 0 0 ]
+"91
+[v _IRTimerInt IRTimerInt `T(v  1 e 0 0 ]
+"105
+[v _ProcessIRInt ProcessIRInt `(v  1 e 0 0 ]
+"7 D:\Prj\PIC\DACVolume.X\LCD.c
+[v _RefreshLine1 RefreshLine1 `T(v  1 e 0 0 ]
+[v i2_RefreshLine1 RefreshLine1 `T(v  1 e 0 0 ]
+"12
+[v _RefreshLine2 RefreshLine2 `T(v  1 e 0 0 ]
+"18
+[v _RefreshLine1Ex RefreshLine1Ex `T(v  1 e 0 0 ]
+[v i2_RefreshLine1Ex RefreshLine1Ex `T(v  1 e 0 0 ]
+"25
+[v _RefreshLine2Ex RefreshLine2Ex `T(v  1 e 0 0 ]
+[v i2_RefreshLine2Ex RefreshLine2Ex `T(v  1 e 0 0 ]
+"5 D:\Prj\PIC\DACVolume.X\LCDDelay.c
+[v _DelayPORSLCD DelayPORSLCD `(v  1 e 0 0 ]
+"11
+[v _DelaySLCD DelaySLCD `(v  1 e 0 0 ]
+"16
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+[v i2_DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+"82 D:\Prj\PIC\DACVolume.X\main.c
+[v _InitAppConfig InitAppConfig `(v  1 s 0 InitAppConfig ]
+"105
+[v _Configure Configure `(v  1 e 0 0 ]
+"151
+[v _ISRLP ISRLP `II(v  1 e 0 0 ]
+"231
+[v _TCPServer TCPServer `(v  1 e 0 0 ]
+"398
+[v _main main `(i  1 e 2 0 ]
+"35 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _RestoreFromFlash RestoreFromFlash `(v  1 e 0 0 ]
+"61
+[v _FindEmpty FindEmpty `(ul  1 e 4 0 ]
+[v i2_FindEmpty FindEmpty `(ul  1 e 4 0 ]
+"83
+[v _SaveToFlash SaveToFlash `(v  1 e 0 0 ]
+[v i2_SaveToFlash SaveToFlash `(v  1 e 0 0 ]
+"122
+[v _GetCheckSum GetCheckSum `(uc  1 e 1 0 ]
+[v i2_GetCheckSum GetCheckSum `(uc  1 e 1 0 ]
+"11 D:\Prj\PIC\DACVolume.X\SLCD/busyslcd.c
+[v _BusySLCD BusySLCD `(uc  1 e 1 0 ]
+[v i2_BusySLCD BusySLCD `(uc  1 e 1 0 ]
+"19 D:\Prj\PIC\DACVolume.X\SLCD/openslcd.c
+[v _OpenSLCD OpenSLCD `(v  1 e 0 0 ]
+"16 D:\Prj\PIC\DACVolume.X\SLCD/putrslcd.c
+[v _PutrsSLCD PutrsSLCD `(v  1 e 0 0 ]
+"16 D:\Prj\PIC\DACVolume.X\SLCD/putsslcd.c
+[v _PutsSLCD PutsSLCD `(v  1 e 0 0 ]
+[v i2_PutsSLCD PutsSLCD `(v  1 e 0 0 ]
+"16 D:\Prj\PIC\DACVolume.X\SLCD/readaddr.c
+[v _ReadAddrSLCD ReadAddrSLCD `(uc  1 e 1 0 ]
+"16 D:\Prj\PIC\DACVolume.X\SLCD/readdata.c
+[v _ReadDataSLCD ReadDataSLCD `(uc  1 e 1 0 ]
+"14 D:\Prj\PIC\DACVolume.X\SLCD/setcgram.c
+[v _SetCGRamAddr SetCGRamAddr `(v  1 e 0 0 ]
+"13 D:\Prj\PIC\DACVolume.X\SLCD/setddram.c
+[v _SLCDSetDDRamAddr SLCDSetDDRamAddr `T(v  1 e 0 0 ]
+[v i2_SLCDSetDDRamAddr SLCDSetDDRamAddr `T(v  1 e 0 0 ]
+"13 D:\Prj\PIC\DACVolume.X\SLCD/wcmdslcd.c
+[v _WriteCmdSLCD WriteCmdSLCD `(v  1 e 0 0 ]
+[v i2_WriteCmdSLCD WriteCmdSLCD `(v  1 e 0 0 ]
+"16 D:\Prj\PIC\DACVolume.X\SLCD/writdata.c
+[v _WriteDataSLCD WriteDataSLCD `(v  1 e 0 0 ]
+[v i2_WriteDataSLCD WriteDataSLCD `(v  1 e 0 0 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"60 D:\Prj\PIC/tcpip/arp.c
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v _Cache Cache `S2369  1 s 10 Cache ]
+"98 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _NextPacketLocation NextPacketLocation `S519  1 s 2 NextPacketLocation ]
+"99
+[v _CurrentPacketLocation CurrentPacketLocation `S519  1 s 2 CurrentPacketLocation ]
+[s S524 . 1 `uc 1 bWasDiscarded 1 0 :1:0 
+`uc 1 bRXPolarityValid 1 0 :1:1 
+`uc 1 bRXPolarityTimerOnTX 1 0 :1:2 
+`uc 1 bRXPolarityAtNextTX 1 0 :1:3 
+`uc 1 filler 1 0 :4:4 
+]
+"111
+[u S530 . 1 `uc 1 v 1 0 `S524 1 bits 1 0 ]
+[v _flags flags `S530  1 s 1 flags ]
+"112
+[v _wTXWatchdog wTXWatchdog `us  1 s 2 wTXWatchdog ]
+"122
+[v _errataTempL errataTempL `uc  1 s 1 errataTempL ]
+"123
+[v _errataTempH errataTempH `uc  1 s 1 errataTempH ]
+"47 D:\Prj\PIC/tcpip/helpers.c
+[v _dwLFSRRandSeed dwLFSRRandSeed `ul  1 s 4 dwLFSRRandSeed ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"1221
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v _toRotate toRotate `S657  1 e 4 0 ]
+"83 D:\Prj\PIC/tcpip/ip.c
+[v __Identifier _Identifier `ui  1 s 2 _Identifier ]
+"84
+[v _IPHeaderLen IPHeaderLen `uc  1 s 1 IPHeaderLen ]
+"69 D:\Prj\PIC/tcpip/stack_task.c
+[v _smStack smStack `E7039  1 s 1 smStack ]
+"71
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v _remoteNode remoteNode `S2369  1 e 10 0 ]
+"187 D:\Prj\PIC/tcpip/tcp.c
+[v _NextPort NextPort `ui  1 s 2 NextPort ]
+[u S5653 . 2 `ui 1 delayedACKTime 2 0 `ui 1 closeWaitTime 2 0 ]
+"204
+[s S5672 . 2 `uc 1 vUnackedKeepalives 1 0 :3:0 
+`uc 1 bServer 1 0 :1:3 
+`uc 1 bTimerEnabled 1 0 :1:4 
+`uc 1 bTimer2Enabled 1 0 :1:5 
+`uc 1 bDelayedACKTimerEnabled 1 0 :1:6 
+`uc 1 bOneSegmentReceived 1 0 :1:7 
+`uc 1 bHalfFullFlush 1 1 :1:0 
+`uc 1 bTXASAP 1 1 :1:1 
+`uc 1 bTXASAPWithoutTimerReset 1 1 :1:2 
+`uc 1 bTXFIN 1 1 :1:3 
+`uc 1 bSocketReset 1 1 :1:4 
+`uc 1 bSSLHandshaking 1 1 :1:5 
+`uc 1 filler 1 1 :2:6 
+]
+[s S5711 . 28 `us 1 bufferTxStart 2 0 `us 1 bufferRxStart 2 2 `us 1 bufferEnd 2 4 `us 1 txHead 2 6 `us 1 txTail 2 8 `us 1 rxHead 2 10 `us 1 rxTail 2 12 `ul 1 eventTime 4 14 `ui 1 eventTime2 2 18 `S5653 1 OverlappedTimers 2 20 `E6867 1 smState 1 22 `S5672 1 Flags 2 23 `S519 1 remoteHash 2 25 `uc 1 vMemoryMedium 1 27 ]
+[v _TCBStubs TCBStubs `S5711  1 s 28 TCBStubs ]
+"211
+[u S5783 . 10 `S2369 1 niRemoteMACIP 10 0 `ul 1 dwRemoteHost 4 0 ]
+[s S5786 . 1 `uc 1 bFINSent 1 0 :1:0 
+`uc 1 bSYNSent 1 0 :1:1 
+`uc 1 bRemoteHostIsROM 1 0 :1:2 
+`uc 1 bRXNoneACKed1 1 0 :1:3 
+`uc 1 bRXNoneACKed2 1 0 :1:4 
+`uc 1 filler 1 0 :3:5 
+]
+[s S5793 . 39 `ul 1 retryInterval 4 0 `ul 1 MySEQ 4 4 `ul 1 RemoteSEQ 4 8 `us 1 txUnackedTail 2 12 `S519 1 remotePort 2 14 `S519 1 localPort 2 16 `ui 1 remoteWindow 2 18 `ui 1 wFutureDataSize 2 20 `S5783 1 remote 10 22 `i 1 sHoleSize 2 32 `S5786 1 flags 1 34 `ui 1 wRemoteMSS 2 35 `uc 1 retryCount 1 37 `uc 1 vSocketPurpose 1 38 ]
+[v _MyTCB MyTCB `S5793  1 s 39 MyTCB ]
+"212
+[v _hCurrentTCP hCurrentTCP `uc  1 s 1 hCurrentTCP ]
+"214
+[s S5808 . 20 `S2369 1 niSourceAddress 10 0 `ui 1 wSourcePort 2 10 `ul 1 dwSourceSEQ 4 12 `ui 1 wDestPort 2 16 `ui 1 wTimestamp 2 18 ]
+[v _SYNQueue SYNQueue `[3]S5808  1 s 60 SYNQueue ]
+"253
+[v _MyTCBStub MyTCBStub `S5711  1 s 28 MyTCBStub ]
+[s S5648 . 6 `uc 1 vSocketPurpose 1 0 `uc 1 vMemoryMedium 1 1 `ui 1 wTXBufferSize 2 2 `ui 1 wRXBufferSize 2 4 ]
+"279 D:\Prj\PIC/tcpip/tcpip_config.h
+[v _TCPSocketInitializer TCPSocketInitializer `C[1]S5648  1 e 6 0 ]
+"49 D:\Prj\PIC/tcpip/tick.c
+[v _dwInternalTicks dwInternalTicks `VEul  1 s 4 dwInternalTicks ]
+"52
+[v _vTickReading vTickReading `VE[6]uc  1 s 6 vTickReading ]
+"47 D:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f67j60.h
+[v _MAADR5 MAADR5 `VEuc  1 e 1 @3712 ]
+"53
+[v _MAADR6 MAADR6 `VEuc  1 e 1 @3713 ]
+"59
+[v _MAADR3 MAADR3 `VEuc  1 e 1 @3714 ]
+"65
+[v _MAADR4 MAADR4 `VEuc  1 e 1 @3715 ]
+"71
+[v _MAADR1 MAADR1 `VEuc  1 e 1 @3716 ]
+"77
+[v _MAADR2 MAADR2 `VEuc  1 e 1 @3717 ]
+[s S1617 . 1 `uc 1 BUSY 1 0 :1:0 
+`uc 1 SCAN 1 0 :1:1 
+`uc 1 NVALID 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+]
+"96
+[u S1622 . 1 `S1617 1 . 1 0 ]
+[v _MISTATbits MISTATbits `VES1622  1 e 1 @3722 ]
+"164
+[v _MACON1 MACON1 `VEuc  1 e 1 @3744 ]
+"201
+[v _MACON3 MACON3 `VEuc  1 e 1 @3746 ]
+"271
+[v _MACON4 MACON4 `VEuc  1 e 1 @3747 ]
+"292
+[v _MABBIPG MABBIPG `VEuc  1 e 1 @3748 ]
+"353
+[v _MAIPGL MAIPGL `VEuc  1 e 1 @3750 ]
+"359
+[v _MAIPGH MAIPGH `VEuc  1 e 1 @3751 ]
+"371
+[v _MAMXFLL MAMXFLL `VEuc  1 e 1 @3754 ]
+"377
+[v _MAMXFLH MAMXFLH `VEuc  1 e 1 @3755 ]
+"383
+[v _MICMD MICMD `VEuc  1 e 1 @3762 ]
+"408
+[v _MIREGADR MIREGADR `VEuc  1 e 1 @3764 ]
+"438
+[v _MIRDL MIRDL `VEuc  1 e 1 @3768 ]
+"444
+[v _MIRDH MIRDH `VEuc  1 e 1 @3769 ]
+"643
+[v _EPKTCNT EPKTCNT `VEuc  1 e 1 @3801 ]
+"649
+[v _EWRPT EWRPT `VEus  1 e 2 @3810 ]
+"667
+[v _ETXST ETXST `VEus  1 e 2 @3812 ]
+"685
+[v _ETXND ETXND `VEus  1 e 2 @3814 ]
+"703
+[v _ERXST ERXST `VEus  1 e 2 @3816 ]
+"721
+[v _ERXND ERXND `VEus  1 e 2 @3818 ]
+"739
+[v _ERXRDPT ERXRDPT `VEus  1 e 2 @3820 ]
+"745
+[v _ERXRDPTL ERXRDPTL `VEuc  1 e 1 @3820 ]
+"751
+[v _ERXRDPTH ERXRDPTH `VEuc  1 e 1 @3821 ]
+"757
+[v _ERXWRPT ERXWRPT `VEus  1 e 2 @3822 ]
+"775
+[v _EDMAST EDMAST `VEus  1 e 2 @3824 ]
+"793
+[v _EDMAND EDMAND `VEus  1 e 2 @3826 ]
+"811
+[v _EDMADST EDMADST `VEus  1 e 2 @3828 ]
+[s S547 . 1 `uc 1 PHYRDY 1 0 :1:0 
+`uc 1 TXABRT 1 0 :1:1 
+`uc 1 RXBUSY 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 . 1 0 :1:5 
+`uc 1 BUFER 1 0 :1:6 
+]
+"921
+[u S554 . 1 `S547 1 . 1 0 ]
+[v _ESTATbits ESTATbits `VES554  1 e 1 @3837 ]
+[s S534 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 ETHEN 1 0 :1:5 
+`uc 1 PKTDEC 1 0 :1:6 
+`uc 1 AUTOINC 1 0 :1:7 
+]
+"958
+[u S539 . 1 `S534 1 . 1 0 ]
+[v _ECON2bits ECON2bits `VES539  1 e 1 @3838 ]
+[s S1523 . 1 `uc 1 RXERIF 1 0 :1:0 
+`uc 1 TXERIF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXIF 1 0 :1:3 
+`uc 1 LINKIF 1 0 :1:4 
+`uc 1 DMAIF 1 0 :1:5 
+`uc 1 PKTIF 1 0 :1:6 
+]
+"997
+[s S1531 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ETXIF 1 0 :1:3 
+]
+[u S1534 . 1 `S1523 1 . 1 0 `S1531 1 . 1 0 ]
+[v _EIRbits EIRbits `VES1534  1 e 1 @3936 ]
+"1990
+[v _ERDPT ERDPT `VEus  1 e 2 @3962 ]
+"1996
+[v _ERDPTL ERDPTL `VEuc  1 e 1 @3962 ]
+"2002
+[v _ERDPTH ERDPTH `VEuc  1 e 1 @3963 ]
+[s S344 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"2848
+[s S8248 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S8255 . 1 `uc 1 LEDA 1 0 :1:0 
+`uc 1 LEDB 1 0 :1:1 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+]
+[s S8260 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S8263 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RA6 1 0 :1:6 
+]
+[s S8266 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RA7 1 0 :1:7 
+]
+[s S8269 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RJPU 1 0 :1:7 
+]
+[s S8272 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+]
+[u S8274 . 1 `S344 1 . 1 0 `S8248 1 . 1 0 `S8255 1 . 1 0 `S8260 1 . 1 0 `S8263 1 . 1 0 `S8266 1 . 1 0 `S8269 1 . 1 0 `S8272 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES8274  1 e 1 @3968 ]
+[s S8182 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2994
+[s S8191 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 INT3 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S8200 . 1 `uc 1 FLT0 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S8205 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S8208 . 1 `S8182 1 . 1 0 `S8191 1 . 1 0 `S8200 1 . 1 0 `S8205 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES8208  1 e 1 @3969 ]
+"3098
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"3955
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S21 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 REPU 1 0 :1:6 
+`uc 1 RDPU 1 0 :1:7 
+]
+"4007
+[s S30 . 1 `uc 1 LA0 1 0 :1:0 
+]
+[s S32 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+]
+[s S35 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LA2 1 0 :1:2 
+]
+[s S38 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LA3 1 0 :1:3 
+]
+[s S41 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LA4 1 0 :1:4 
+]
+[s S44 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LA5 1 0 :1:5 
+]
+[s S47 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LA6 1 0 :1:6 
+]
+[s S50 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LA7 1 0 :1:7 
+]
+[s S53 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LATA7 1 0 :1:7 
+]
+[u S56 . 1 `S21 1 . 1 0 `S30 1 . 1 0 `S32 1 . 1 0 `S35 1 . 1 0 `S38 1 . 1 0 `S41 1 . 1 0 `S44 1 . 1 0 `S47 1 . 1 0 `S50 1 . 1 0 `S53 1 . 1 0 ]
+[v _LATAbits LATAbits `VES56  1 e 1 @3977 ]
+"4096
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S8769 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"4144
+[s S8778 . 1 `uc 1 LF0 1 0 :1:0 
+]
+[s S8780 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LF1 1 0 :1:1 
+]
+[s S8783 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LF2 1 0 :1:2 
+]
+[s S8786 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LF3 1 0 :1:3 
+]
+[s S8789 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LF4 1 0 :1:4 
+]
+[s S8792 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LF5 1 0 :1:5 
+]
+[s S8795 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LF6 1 0 :1:6 
+]
+[s S8798 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LF7 1 0 :1:7 
+]
+[u S8801 . 1 `S8769 1 . 1 0 `S8778 1 . 1 0 `S8780 1 . 1 0 `S8783 1 . 1 0 `S8786 1 . 1 0 `S8789 1 . 1 0 `S8792 1 . 1 0 `S8795 1 . 1 0 `S8798 1 . 1 0 ]
+[v _LATBbits LATBbits `VES8801  1 e 1 @3978 ]
+"4228
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"4360
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S8034 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+]
+"4403
+[s S8038 . 1 `uc 1 LD0 1 0 :1:0 
+]
+[s S8040 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+]
+[s S8043 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LD2 1 0 :1:2 
+]
+[s S8046 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LD3 1 0 :1:3 
+]
+[s S8049 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LD4 1 0 :1:4 
+]
+[s S8052 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LD5 1 0 :1:5 
+]
+[s S8055 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LD6 1 0 :1:6 
+]
+[s S8058 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S8061 . 1 `S8034 1 . 1 0 `S8038 1 . 1 0 `S8040 1 . 1 0 `S8043 1 . 1 0 `S8046 1 . 1 0 `S8049 1 . 1 0 `S8052 1 . 1 0 `S8055 1 . 1 0 `S8058 1 . 1 0 ]
+[v _LATDbits LATDbits `VES8061  1 e 1 @3980 ]
+"4462
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S8698 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+`uc 1 LATE3 1 0 :1:3 
+`uc 1 LATE4 1 0 :1:4 
+`uc 1 LATE5 1 0 :1:5 
+]
+"4508
+[s S8705 . 1 `uc 1 LE0 1 0 :1:0 
+]
+[s S8707 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+]
+[s S8710 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LE2 1 0 :1:2 
+]
+[s S8713 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LE3 1 0 :1:3 
+]
+[s S8716 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LE4 1 0 :1:4 
+]
+[s S8719 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LE5 1 0 :1:5 
+]
+[s S8722 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LE6 1 0 :1:6 
+]
+[s S8725 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LE7 1 0 :1:7 
+]
+[u S8728 . 1 `S8698 1 . 1 0 `S8705 1 . 1 0 `S8707 1 . 1 0 `S8710 1 . 1 0 `S8713 1 . 1 0 `S8716 1 . 1 0 `S8719 1 . 1 0 `S8722 1 . 1 0 `S8725 1 . 1 0 ]
+[v _LATEbits LATEbits `VES8728  1 e 1 @3981 ]
+"4630
+[v _LATFbits LATFbits `VES8801  1 e 1 @3982 ]
+[s S8844 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATG4 1 0 :1:4 
+]
+"4739
+[s S8847 . 1 `uc 1 LG0 1 0 :1:0 
+]
+[s S8849 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LG1 1 0 :1:1 
+]
+[s S8852 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LG2 1 0 :1:2 
+]
+[s S8855 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LG3 1 0 :1:3 
+]
+[s S8858 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LG4 1 0 :1:4 
+]
+[u S8861 . 1 `S8844 1 . 1 0 `S8847 1 . 1 0 `S8849 1 . 1 0 `S8852 1 . 1 0 `S8855 1 . 1 0 `S8858 1 . 1 0 ]
+[v _LATGbits LATGbits `VES8861  1 e 1 @3983 ]
+"4773
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S337 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"4801
+[u S351 . 1 `S337 1 . 1 0 `S344 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES351  1 e 1 @3986 ]
+"4946
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"5167
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"5388
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5489
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"5662
+[v _TRISF TRISF `VEuc  1 e 1 @3991 ]
+"5863
+[v _TRISG TRISG `VEuc  1 e 1 @3992 ]
+"5920
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S9162 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"5998
+[s S9170 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S9175 . 1 `S9162 1 . 1 0 `S9170 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES9175  1 e 1 @3997 ]
+[s S8386 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"6077
+[s S8394 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[s S8398 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+]
+[u S8401 . 1 `S8386 1 . 1 0 `S8394 1 . 1 0 `S8398 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES8401  1 e 1 @3998 ]
+[s S9440 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+]
+"6574
+[u S9446 . 1 `S9440 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES9446  1 e 1 @4006 ]
+"6598
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"7387
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+"8318
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"8388
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"8478
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S3612 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"8528
+[s S3615 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S3622 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[s S3631 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S3634 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S3637 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S3640 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S3643 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S3646 . 1 `S3612 1 . 1 0 `S3615 1 . 1 0 `S3612 1 . 1 0 `S3622 1 . 1 0 `S3631 1 . 1 0 `S3634 1 . 1 0 `S3637 1 . 1 0 `S3640 1 . 1 0 `S3643 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES3646  1 e 1 @4034 ]
+[s S9101 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"10554
+[s S9104 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S9112 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S9118 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[s S9121 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+]
+[s S9124 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S9127 . 1 `S9101 1 . 1 0 `S9104 1 . 1 0 `S9112 1 . 1 0 `S9118 1 . 1 0 `S9121 1 . 1 0 `S9124 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES9127  1 e 1 @4045 ]
+"10634
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+[s S7967 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"10688
+[s S7969 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S7972 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S7975 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S7978 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S7981 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S7989 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S7995 . 1 `S7967 1 . 1 0 `S7969 1 . 1 0 `S7972 1 . 1 0 `S7975 1 . 1 0 `S7978 1 . 1 0 `S7981 1 . 1 0 `S7989 1 . 1 0 ]
+[v _RCONbits RCONbits `VES7995  1 e 1 @4048 ]
+[s S1345 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RXEN 1 0 :1:2 
+`uc 1 TXRTS 1 0 :1:3 
+`uc 1 CSUMEN 1 0 :1:4 
+`uc 1 DMAST 1 0 :1:5 
+`uc 1 RXRST 1 0 :1:6 
+`uc 1 TXRST 1 0 :1:7 
+]
+"10815
+[u S1353 . 1 `S1345 1 . 1 0 ]
+[v _ECON1bits ECON1bits `VES1353  1 e 1 @4050 ]
+[s S7945 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"10867
+[s S7951 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+]
+[u S7954 . 1 `S7945 1 . 1 0 `S7951 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES7954  1 e 1 @4051 ]
+"10896
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"10971
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"10977
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"11217
+[v _INTCON3 INTCON3 `VEuc  1 e 1 @4080 ]
+[s S8126 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 INT3IF 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 INT3IE 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"11244
+[s S8135 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 INT3F 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 INT3E 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S8144 . 1 `S8126 1 . 1 0 `S8135 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES8144  1 e 1 @4080 ]
+"11328
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+[s S7687 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"11355
+[s S7690 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 INT3IP 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 INTEDG3 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S7699 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S7704 . 1 `S7687 1 . 1 0 `S7690 1 . 1 0 `S7699 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES7704  1 e 1 @4081 ]
+"11414
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S7726 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"11466
+[s S7735 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S7744 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[s S7753 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S7762 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S7766 . 1 `S7726 1 . 1 0 `S7735 1 . 1 0 `S7744 1 . 1 0 `S7753 1 . 1 0 `S7762 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES7766  1 e 1 @4082 ]
+"11568
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"11582
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"11588
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"11594
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"354 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"7 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+"13 D:\Prj\PIC\DACVolume.X\Device.c
+[v _LOGS LOGS `C[48]ui  1 e 96 0 ]
+"13 D:\Prj\PIC\DACVolume.X\IR.c
+[v _s_numTicksPrev s_numTicksPrev `ul  1 e 4 0 ]
+"14
+[v _s_numTicksDiff s_numTicksDiff `[256]uc  1 e 256 0 ]
+"15
+[v _s_numTicksDiffIdx s_numTicksDiffIdx `ui  1 e 2 0 ]
+"16
+[v _s_prevIRPort s_prevIRPort `uc  1 e 1 0 ]
+"18
+[v _s_irLearn s_irLearn `VEuc  1 e 1 0 ]
+"19
+[v _s_irCodeBitIdx s_irCodeBitIdx `VEuc  1 e 1 0 ]
+"20
+[v _s_irCodeByteIdx s_irCodeByteIdx `VEuc  1 e 1 0 ]
+"21
+[v _s_irCode s_irCode `VE[16]uc  1 e 16 0 ]
+"22
+[v _s_lastIRCodeReceived s_lastIRCodeReceived `ul  1 e 4 0 ]
+"29
+[v _IR_VOLUME_UP IR_VOLUME_UP `C[9]uc  1 e 9 0 ]
+"30
+[v _IR_VOLUME_DOWN IR_VOLUME_DOWN `C[9]uc  1 e 9 0 ]
+"31
+[v _IR_POWER_ON IR_POWER_ON `C[3]uc  1 e 3 0 ]
+"32
+[v _IR_POWER_OFF IR_POWER_OFF `C[3]uc  1 e 3 0 ]
+"4 D:\Prj\PIC\DACVolume.X\LCD.c
+[v _dispbuf1 dispbuf1 `[17]uc  1 e 17 0 ]
+"5
+[v _dispbuf2 dispbuf2 `[17]uc  1 e 17 0 ]
+"78 D:\Prj\PIC\DACVolume.X\main.c
+[v _SerializedMACAddress SerializedMACAddress `C[6]uc  1 s 6 SerializedMACAddress ]
+"80
+[s S665 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 bIsDHCPEnabled 1 0 :1:6 
+`uc 1 bInConfigMode 1 0 :1:7 
+]
+[s S671 appConfigStruct 51 `S657 1 MyIPAddr 4 0 `S657 1 MyMask 4 4 `S657 1 MyGateway 4 8 `S657 1 PrimaryDNSServer 4 12 `S657 1 SecondaryDNSServer 4 16 `S657 1 DefaultIPAddr 4 20 `S657 1 DefaultMask 4 24 `[16]uc 1 NetBIOSName 16 28 `S665 1 Flags 1 44 `S669 1 MyMACAddr 6 45 ]
+[v _AppConfig AppConfig `S671  1 e 51 0 ]
+"149
+[v _s_encoderLastUpdate s_encoderLastUpdate `ul  1 e 4 0 ]
+"227
+[v _resOK resOK `[3]uc  1 e 3 0 ]
+"228
+[v _badChecksum badChecksum `[2]uc  1 e 2 0 ]
+"229
+[v _invalidCommand invalidCommand `[2]uc  1 e 2 0 ]
+[s S8166 DAC_SETTINGS 20 `uc 1 Sequence 1 0 `uc 1 SampleRate 1 1 `uc 1 Volume 1 2 `[16]uc 1 ChannelScaling 16 3 `uc 1 CheckSum 1 19 ]
+"12 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _s_dacSettings s_dacSettings `SSS8166  1 e 20 0 ]
+[v _s_dacSettingsTmp s_dacSettingsTmp `SSS8166  1 e 20 0 ]
+[v _s_dacSettingsOriginal s_dacSettingsOriginal `SSS8166  1 e 20 0 ]
+"16
+[v _SETTINGS_ADDR SETTINGS_ADDR `Cul  1 e 4 0 ]
+"17
+[v _SETTINGS_LEN SETTINGS_LEN `Cul  1 e 4 0 ]
+"19
+[v _reserveSettingsArr reserveSettingsArr `C[8192]uc  1 e 8192 @118784 ]
+"398 D:\Prj\PIC\DACVolume.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"419
+} 0
+"231
+[v _TCPServer TCPServer `(v  1 e 0 0 ]
+{
+"273
+[v TCPServer@cmdBytes cmdBytes `[18]uc  1 a 18 135 ]
+"276
+[v TCPServer@checksum checksum `uc  1 a 1 134 ]
+"233
+[v TCPServer@wMaxPut wMaxPut `ui  1 a 2 132 ]
+[v TCPServer@wMaxGet wMaxGet `ui  1 a 2 130 ]
+"234
+[v TCPServer@srvSocket srvSocket `uc  1 s 1 srvSocket ]
+"240
+[v TCPServer@tcpServerState tcpServerState `E7159  1 s 1 tcpServerState ]
+"395
+} 0
+"1192 D:\Prj\PIC/tcpip/tcp.c
+[v _TCPPutArray TCPPutArray `(ui  1 e 2 0 ]
+{
+[v TCPPutArray@hTCP hTCP `uc  1 a 1 wreg ]
+"1195
+[v TCPPutArray@wFreeTXSpace wFreeTXSpace `ui  1 a 2 99 ]
+"1194
+[v TCPPutArray@wActualLen wActualLen `ui  1 a 2 97 ]
+"1196
+[v TCPPutArray@wRightLen wRightLen `ui  1 a 2 95 ]
+"1192
+[v TCPPutArray@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPPutArray@data data `*.39uc  1 p 2 87 ]
+[v TCPPutArray@len len `ui  1 p 2 89 ]
+"1196
+[v TCPPutArray@hTCP hTCP `uc  1 a 1 101 ]
+"1286
+} 0
+"1048
+[v _TCPIsPutReady TCPIsPutReady `(ui  1 e 2 0 ]
+{
+[v TCPIsPutReady@hTCP hTCP `uc  1 a 1 wreg ]
+"1050
+[v TCPIsPutReady@i i `uc  1 a 1 38 ]
+"1048
+[v TCPIsPutReady@hTCP hTCP `uc  1 a 1 wreg ]
+"1052
+[v TCPIsPutReady@hTCP hTCP `uc  1 a 1 37 ]
+"1089
+} 0
+"1006
+[v _TCPFlush TCPFlush `(v  1 e 0 0 ]
+{
+[v TCPFlush@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPFlush@hTCP hTCP `uc  1 a 1 wreg ]
+"1008
+[v TCPFlush@hTCP hTCP `uc  1 a 1 86 ]
+"1023
+} 0
+"553
+[v _TCPOpen TCPOpen `(uc  1 e 1 0 ]
+{
+"555
+[v TCPOpen@hTCP hTCP `uc  1 a 1 98 ]
+"553
+[v TCPOpen@dwRemoteHost dwRemoteHost `ul  1 p 4 86 ]
+[v TCPOpen@vRemoteHostType vRemoteHostType `uc  1 p 1 90 ]
+[v TCPOpen@wPort wPort `ui  1 p 2 91 ]
+[v TCPOpen@vSocketPurpose vSocketPurpose `uc  1 p 1 93 ]
+"647
+} 0
+"733
+[v _TCPIsConnected TCPIsConnected `(uc  1 e 1 0 ]
+{
+[v TCPIsConnected@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPIsConnected@hTCP hTCP `uc  1 a 1 wreg ]
+"735
+[v TCPIsConnected@hTCP hTCP `uc  1 a 1 33 ]
+"742
+} 0
+"1661
+[v _TCPGetArray TCPGetArray `(ui  1 e 2 0 ]
+{
+[v TCPGetArray@hTCP hTCP `uc  1 a 1 wreg ]
+"1664
+[v TCPGetArray@RightLen RightLen `ui  1 a 2 49 ]
+"1663
+[v TCPGetArray@wGetReadyCount wGetReadyCount `ui  1 a 2 47 ]
+"1661
+[v TCPGetArray@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPGetArray@buffer buffer `*.39uc  1 p 2 38 ]
+[v TCPGetArray@len len `ui  1 p 2 40 ]
+"1664
+[v TCPGetArray@hTCP hTCP `uc  1 a 1 46 ]
+"1709
+} 0
+"1573
+[v _TCPIsGetReady TCPIsGetReady `(ui  1 e 2 0 ]
+{
+[v TCPIsGetReady@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPIsGetReady@hTCP hTCP `uc  1 a 1 wreg ]
+"1575
+[v TCPIsGetReady@hTCP hTCP `uc  1 a 1 37 ]
+"1586
+} 0
+"919
+[v _TCPClose TCPClose `(v  1 e 0 0 ]
+{
+[v TCPClose@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPClose@hTCP hTCP `uc  1 a 1 wreg ]
+"921
+[v TCPClose@hTCP hTCP `uc  1 a 1 87 ]
+"929
+} 0
+"83 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _SaveToFlash SaveToFlash `(v  1 e 0 0 ]
+{
+"94
+[v SaveToFlash@emptyAddr emptyAddr `ul  1 a 4 59 ]
+"89
+[v SaveToFlash@addr addr `ul  1 a 4 52 ]
+"90
+[v SaveToFlash@success success `uc  1 a 1 58 ]
+"86
+[v SaveToFlash@cmp cmp `i  1 a 2 56 ]
+"120
+} 0
+"3 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+{
+[v memcmp@s1 s1 `*.34Cv  1 p 2 0 ]
+[v memcmp@s2 s2 `*.39Cv  1 p 2 2 ]
+[v memcmp@n n `ui  1 p 2 4 ]
+"12
+} 0
+"119 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\WriteBlockFlash.c
+[v _WriteBlockFlash WriteBlockFlash `(v  1 e 0 0 ]
+{
+"126
+[v WriteBlockFlash@saddress saddress `ul  1 a 4 13 ]
+"125
+[v WriteBlockFlash@startptr startptr `*.33uc  1 a 3 8 ]
+"121
+[v WriteBlockFlash@flag flag `uc  1 a 1 12 ]
+[v WriteBlockFlash@write_byte write_byte `uc  1 a 1 11 ]
+"119
+[v WriteBlockFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v WriteBlockFlash@num_blocks num_blocks `uc  1 p 1 4 ]
+[v WriteBlockFlash@flash_array flash_array `*.39uc  1 p 2 5 ]
+"206
+} 0
+"61 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _FindEmpty FindEmpty `(ul  1 e 4 0 ]
+{
+"69
+[v FindEmpty@tmpAddr tmpAddr `*.39uc  1 a 2 38 ]
+"70
+[v FindEmpty@blockEnd blockEnd `*.39uc  1 a 2 32 ]
+"64
+[v FindEmpty@addr addr `ul  1 a 4 34 ]
+"63
+[v FindEmpty@addrStop addrStop `ul  1 a 4 28 ]
+"61
+[v FindEmpty@startAddr startAddr `ul  1 p 4 16 ]
+"81
+} 0
+"59 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\EraseFlash.c
+[v _EraseFlash EraseFlash `(v  1 e 0 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"62
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v EraseFlash@flash_addr flash_addr `S657  1 a 4 9 ]
+"61
+[v EraseFlash@flag flag `uc  1 a 1 8 ]
+"59
+[v EraseFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v EraseFlash@endaddr endaddr `ul  1 p 4 4 ]
+"87
+} 0
+"283 D:\Prj\PIC\DACVolume.X\Device.c
+[v _PowerOn PowerOn `(v  1 e 0 0 ]
+{
+"302
+} 0
+"234
+[v _UpdateSampleRate UpdateSampleRate `(v  1 e 0 0 ]
+{
+"246
+[v UpdateSampleRate@srStr srStr `*.32Cuc  1 a 2 5 ]
+"281
+} 0
+"25 D:\Prj\PIC\DACVolume.X\LCD.c
+[v _RefreshLine2Ex RefreshLine2Ex `T(v  1 e 0 0 ]
+{
+[v RefreshLine2Ex@line line `*.34Cuc  1 p 2 3 ]
+"29
+} 0
+"161 D:\Prj\PIC\DACVolume.X\Device.c
+[v _UpdateMasterVolume UpdateMasterVolume `T(v  1 e 0 0 ]
+{
+"163
+[v UpdateMasterVolume@dvol dvol `d  1 a 3 126 ]
+"165
+[v UpdateMasterVolume@i i `uc  1 a 1 129 ]
+"171
+} 0
+"492 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"1210
+[v sprintf@vd vd `ul  1 a 4 94 ]
+"1238
+[v sprintf@vd_9359 vd `ul  1 a 4 98 ]
+[s S9344 . 5 `*.39Cuc 1 _cp 3 0 `ui 1 _len 2 3 ]
+"525
+[u S9347 . 5 `ul 1 _val 4 0 `S9344 1 _str 5 0 ]
+[v sprintf@_val _val `S9347  1 a 5 107 ]
+"516
+[v sprintf@fval fval `d  1 a 3 118 ]
+[v sprintf@integ integ `d  1 a 3 104 ]
+"504
+[v sprintf@prec prec `i  1 a 2 121 ]
+"516
+[v sprintf@exp exp `i  1 a 2 116 ]
+"501
+[v sprintf@width width `i  1 a 2 114 ]
+"508
+[v sprintf@flag flag `us  1 a 2 112 ]
+"510
+[v sprintf@ccnt ccnt `i  1 a 2 102 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 92 ]
+"499
+[v sprintf@c c `c  1 a 1 123 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 72 ]
+[v sprintf@f f `*.32Cuc  1 p 2 74 ]
+"1550
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 41 ]
+"441
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"409 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 44 ]
+"418
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 9 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 14 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 13 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 10 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 15 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 14 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 16 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"20 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 57 ]
+[v ___ftsub@f2 f2 `f  1 p 3 60 ]
+"25
+} 0
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"49 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"52
+[v ___ftdiv@f3 f3 `f  1 a 3 22 ]
+"51
+[v ___ftdiv@sign sign `uc  1 a 1 26 ]
+[v ___ftdiv@exp exp `uc  1 a 1 25 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 21 ]
+"49
+[v ___ftdiv@f1 f1 `f  1 p 3 12 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 15 ]
+"78
+} 0
+"32 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"224 D:\Prj\PIC\DACVolume.X\Device.c
+[v _SendVolumeToDevice SendVolumeToDevice `(v  1 e 0 0 ]
+{
+"232
+} 0
+"192
+[v _SendDataToDeviceCh SendDataToDeviceCh `(v  1 e 0 0 ]
+{
+[v SendDataToDeviceCh@offset offset `uc  1 a 1 wreg ]
+"198
+[v SendDataToDeviceCh@v v `ui  1 a 2 86 ]
+"196
+[v SendDataToDeviceCh@i i `uc  1 a 1 105 ]
+"194
+[v SendDataToDeviceCh@values values `[8]ui  1 a 16 89 ]
+"202
+[v SendDataToDeviceCh@mask mask `ui  1 a 2 106 ]
+"192
+[v SendDataToDeviceCh@offset offset `uc  1 a 1 wreg ]
+"196
+[v SendDataToDeviceCh@offset offset `uc  1 a 1 88 ]
+"221
+} 0
+"64
+[v _DbToCode DbToCode `(ui  1 e 2 0 ]
+{
+"66
+[v DbToCode@k k `d  1 a 3 80 ]
+"64
+[v DbToCode@volume volume `ui  1 p 2 72 ]
+"148
+} 0
+"28 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"44 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 67 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 71 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 66 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 57 ]
+"73
+} 0
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 30 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 34 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 33 ]
+[v ___ftmul@exp exp `uc  1 a 1 29 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 20 ]
+[v ___ftmul@f2 f2 `f  1 p 3 23 ]
+"157
+} 0
+"86 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 56 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 55 ]
+[v ___ftadd@sign sign `uc  1 a 1 54 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 45 ]
+[v ___ftadd@f2 f2 `f  1 p 3 48 ]
+"148
+} 0
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"7 D:\Prj\PIC\DACVolume.X\LCD.c
+[v _RefreshLine1 RefreshLine1 `T(v  1 e 0 0 ]
+{
+"10
+} 0
+"18
+[v _RefreshLine1Ex RefreshLine1Ex `T(v  1 e 0 0 ]
+{
+[v RefreshLine1Ex@line line `*.34Cuc  1 p 2 3 ]
+"23
+} 0
+"16 D:\Prj\PIC\DACVolume.X\SLCD/putsslcd.c
+[v _PutsSLCD PutsSLCD `(v  1 e 0 0 ]
+{
+[v PutsSLCD@buffer buffer `*.34Cuc  1 p 2 1 ]
+"25
+} 0
+"16 D:\Prj\PIC\DACVolume.X\SLCD/writdata.c
+[v _WriteDataSLCD WriteDataSLCD `(v  1 e 0 0 ]
+{
+[v WriteDataSLCD@data data `uc  1 a 1 wreg ]
+[v WriteDataSLCD@data data `uc  1 a 1 wreg ]
+"19
+[v WriteDataSLCD@data data `uc  1 a 1 0 ]
+"64
+} 0
+"203 D:\Prj\PIC/tcpip/stack_task.c
+[v _StackTask StackTask `(v  1 e 0 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"206
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v StackTask@tempLocalIP tempLocalIP `S657  1 a 4 173 ]
+"205
+[v StackTask@dataCount dataCount `ui  1 a 2 171 ]
+"207
+[v StackTask@cFrameType cFrameType `uc  1 a 1 178 ]
+"208
+[v StackTask@cIPFrameType cIPFrameType `uc  1 a 1 177 ]
+"397
+} 0
+"2323 D:\Prj\PIC/tcpip/tcp.c
+[v _TCPTick TCPTick `(v  1 e 0 0 ]
+{
+"2329
+[v TCPTick@w w `ui  1 a 2 103 ]
+"2328
+[v TCPTick@vFlags vFlags `uc  1 a 1 102 ]
+"2325
+[v TCPTick@hTCP hTCP `uc  1 a 1 101 ]
+"2326
+[v TCPTick@bRetransmit bRetransmit `uc  1 a 1 100 ]
+"2327
+[v TCPTick@bCloseSocket bCloseSocket `uc  1 a 1 99 ]
+"2754
+} 0
+"788
+[v _TCPDisconnect TCPDisconnect `(v  1 e 0 0 ]
+{
+[v TCPDisconnect@hTCP hTCP `uc  1 a 1 wreg ]
+[v TCPDisconnect@hTCP hTCP `uc  1 a 1 wreg ]
+"790
+[v TCPDisconnect@hTCP hTCP `uc  1 a 1 86 ]
+"893
+} 0
+"569 D:\Prj\PIC/tcpip/arp.c
+[v _ARPResolve ARPResolve `(v  1 e 0 0 ]
+{
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+"571
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S2372 . 28 `ui 1 HardwareType 2 0 `ui 1 Protocol 2 2 `uc 1 MACAddrLen 1 4 `uc 1 ProtocolLen 1 5 `ui 1 Operation 2 6 `S669 1 SenderMACAddr 6 8 `S657 1 SenderIPAddr 4 14 `S669 1 TargetMACAddr 6 18 `S657 1 TargetIPAddr 4 24 ]
+[v ARPResolve@packet packet `S2372  1 a 28 50 ]
+"569
+[v ARPResolve@IPAddr IPAddr `*.39S657  1 p 2 32 ]
+"612
+} 0
+"654
+[v _ARPIsResolved ARPIsResolved `(uc  1 e 1 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v ARPIsResolved@IPAddr IPAddr `*.39S657  1 p 2 0 ]
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[v ARPIsResolved@MACAddr MACAddr `*.39S669  1 p 2 2 ]
+"667
+} 0
+"2781 D:\Prj\PIC/tcpip/tcp.c
+[v _TCPProcess TCPProcess `(uc  1 e 1 0 ]
+{
+[s S5867 . 1 `uc 1 Reserved3 1 0 :4:0 
+`uc 1 Val 1 0 :4:4 
+]
+"2783
+[s S5870 . 1 `uc 1 flagFIN 1 0 :1:0 
+`uc 1 flagSYN 1 0 :1:1 
+`uc 1 flagRST 1 0 :1:2 
+`uc 1 flagPSH 1 0 :1:3 
+`uc 1 flagACK 1 0 :1:4 
+`uc 1 flagURG 1 0 :1:5 
+`uc 1 Reserved2 1 0 :2:6 
+]
+[u S5878 . 1 `S5870 1 bits 1 0 `uc 1 byte 1 0 ]
+[s S5881 . 20 `ui 1 SourcePort 2 0 `ui 1 DestPort 2 2 `ul 1 SeqNumber 4 4 `ul 1 AckNumber 4 8 `S5867 1 DataOffset 1 12 `S5878 1 Flags 1 13 `ui 1 Window 2 14 `ui 1 Checksum 2 16 `ui 1 UrgentPointer 2 18 ]
+[v TCPProcess@TCPHeader TCPHeader `S5881  1 a 20 151 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"2784
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S5891 _PSEUDO_HEADER 12 `S657 1 SourceAddress 4 0 `S657 1 DestAddress 4 4 `uc 1 Zero 1 8 `uc 1 Protocol 1 9 `ui 1 Length 2 10 ]
+[v TCPProcess@pseudoHeader pseudoHeader `S5891  1 a 12 139 ]
+"2786
+[v TCPProcess@checksum2 checksum2 `S519  1 a 2 136 ]
+"2785
+[v TCPProcess@checksum1 checksum1 `S519  1 a 2 134 ]
+"2787
+[v TCPProcess@optionsSize optionsSize `uc  1 a 1 138 ]
+"2781
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v TCPProcess@remote remote `*.39S2369  1 p 2 126 ]
+[v TCPProcess@localIP localIP `*.39S657  1 p 2 128 ]
+[v TCPProcess@len len `ui  1 p 2 130 ]
+"2872
+} 0
+"3570
+[v _HandleTCPSeg HandleTCPSeg `(v  1 s 0 HandleTCPSeg ]
+{
+"3578
+[v HandleTCPSeg@localAckNumber localAckNumber `ul  1 a 4 117 ]
+"3574
+[v HandleTCPSeg@lMissingBytes lMissingBytes `l  1 a 4 111 ]
+"3572
+[v HandleTCPSeg@dwTemp dwTemp `ul  1 a 4 107 ]
+"3579
+[v HandleTCPSeg@localSeqNumber localSeqNumber `ul  1 a 4 101 ]
+"3575
+[v HandleTCPSeg@wMissingBytes wMissingBytes `ui  1 a 2 124 ]
+"3573
+[v HandleTCPSeg@wTemp wTemp `us  1 a 2 122 ]
+"3576
+[v HandleTCPSeg@wFreeSpace wFreeSpace `ui  1 a 2 115 ]
+"3580
+[v HandleTCPSeg@wSegmentLength wSegmentLength `ui  1 a 2 105 ]
+"3582
+[v HandleTCPSeg@wNewWindow wNewWindow `ui  1 a 2 98 ]
+"3577
+[v HandleTCPSeg@localHeaderFlags localHeaderFlags `uc  1 a 1 121 ]
+"3581
+[v HandleTCPSeg@bSegmentAcceptable bSegmentAcceptable `uc  1 a 1 100 ]
+[s S5867 . 1 `uc 1 Reserved3 1 0 :4:0 
+`uc 1 Val 1 0 :4:4 
+]
+"3570
+[s S5870 . 1 `uc 1 flagFIN 1 0 :1:0 
+`uc 1 flagSYN 1 0 :1:1 
+`uc 1 flagRST 1 0 :1:2 
+`uc 1 flagPSH 1 0 :1:3 
+`uc 1 flagACK 1 0 :1:4 
+`uc 1 flagURG 1 0 :1:5 
+`uc 1 Reserved2 1 0 :2:6 
+]
+[u S5878 . 1 `S5870 1 bits 1 0 `uc 1 byte 1 0 ]
+[s S5881 . 20 `ui 1 SourcePort 2 0 `ui 1 DestPort 2 2 `ul 1 SeqNumber 4 4 `ul 1 AckNumber 4 8 `S5867 1 DataOffset 1 12 `S5878 1 Flags 1 13 `ui 1 Window 2 14 `ui 1 Checksum 2 16 `ui 1 UrgentPointer 2 18 ]
+[v HandleTCPSeg@h h `*.39S5881  1 p 2 86 ]
+[v HandleTCPSeg@len len `ui  1 p 2 88 ]
+"4262
+} 0
+"2898
+[v _SendTCP SendTCP `(v  1 s 0 SendTCP ]
+{
+[v SendTCP@vTCPFlags vTCPFlags `uc  1 a 1 wreg ]
+[s S5867 . 1 `uc 1 Reserved3 1 0 :4:0 
+`uc 1 Val 1 0 :4:4 
+]
+"2901
+[s S5870 . 1 `uc 1 flagFIN 1 0 :1:0 
+`uc 1 flagSYN 1 0 :1:1 
+`uc 1 flagRST 1 0 :1:2 
+`uc 1 flagPSH 1 0 :1:3 
+`uc 1 flagACK 1 0 :1:4 
+`uc 1 flagURG 1 0 :1:5 
+`uc 1 Reserved2 1 0 :2:6 
+]
+[u S5878 . 1 `S5870 1 bits 1 0 `uc 1 byte 1 0 ]
+[s S5881 . 20 `ui 1 SourcePort 2 0 `ui 1 DestPort 2 2 `ul 1 SeqNumber 4 4 `ul 1 AckNumber 4 8 `S5867 1 DataOffset 1 12 `S5878 1 Flags 1 13 `ui 1 Window 2 14 `ui 1 Checksum 2 16 `ui 1 UrgentPointer 2 18 ]
+[v SendTCP@header header `S5881  1 a 20 66 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"2903
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S5891 _PSEUDO_HEADER 12 `S657 1 SourceAddress 4 0 `S657 1 DestAddress 4 4 `uc 1 Zero 1 8 `uc 1 Protocol 1 9 `ui 1 Length 2 10 ]
+[v SendTCP@pseudoHeader pseudoHeader `S5891  1 a 12 54 ]
+"2902
+[s S5920 . 4 `uc 1 Kind 1 0 `uc 1 Length 1 1 `S519 1 MaxSegSize 2 2 ]
+[v SendTCP@options options `S5920  1 a 4 45 ]
+"2904
+[v SendTCP@len len `ui  1 a 2 52 ]
+"2900
+[v SendTCP@wVal wVal `S519  1 a 2 49 ]
+"2898
+[v SendTCP@vTCPFlags vTCPFlags `uc  1 a 1 wreg ]
+[v SendTCP@vSendFlags vSendFlags `uc  1 p 1 40 ]
+"2906
+[v SendTCP@vTCPFlags vTCPFlags `uc  1 a 1 51 ]
+"3154
+} 0
+"3361
+[v _SwapTCPHeader SwapTCPHeader `(v  1 s 0 SwapTCPHeader ]
+{
+[s S5867 . 1 `uc 1 Reserved3 1 0 :4:0 
+`uc 1 Val 1 0 :4:4 
+]
+[s S5870 . 1 `uc 1 flagFIN 1 0 :1:0 
+`uc 1 flagSYN 1 0 :1:1 
+`uc 1 flagRST 1 0 :1:2 
+`uc 1 flagPSH 1 0 :1:3 
+`uc 1 flagACK 1 0 :1:4 
+`uc 1 flagURG 1 0 :1:5 
+`uc 1 Reserved2 1 0 :2:6 
+]
+[u S5878 . 1 `S5870 1 bits 1 0 `uc 1 byte 1 0 ]
+[s S5881 . 20 `ui 1 SourcePort 2 0 `ui 1 DestPort 2 2 `ul 1 SeqNumber 4 4 `ul 1 AckNumber 4 8 `S5867 1 DataOffset 1 12 `S5878 1 Flags 1 13 `ui 1 Window 2 14 `ui 1 Checksum 2 16 `ui 1 UrgentPointer 2 18 ]
+[v SwapTCPHeader@header header `*.39S5881  1 p 2 5 ]
+"3370
+} 0
+"1103 D:\Prj\PIC/tcpip/helpers.c
+[v _swapl swapl `(ul  1 e 4 0 ]
+{
+[v swapl@v v `ul  1 p 4 0 ]
+"1117
+} 0
+"371 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACGetFreeRxSize MACGetFreeRxSize `(ui  1 e 2 0 ]
+{
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"373
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[v MACGetFreeRxSize@ReadPT ReadPT `S519  1 a 2 6 ]
+[v MACGetFreeRxSize@WritePT WritePT `S519  1 a 2 4 ]
+"404
+} 0
+"234 D:\Prj\PIC/tcpip/ip.c
+[v _IPPutHeader IPPutHeader `(ui  1 e 2 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"238
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S4298 _IP_HEADER 20 `uc 1 VersionIHL 1 0 `uc 1 TypeOfService 1 1 `ui 1 TotalLength 2 2 `ui 1 Identification 2 4 `ui 1 FragmentInfo 2 6 `uc 1 TimeToLive 1 8 `uc 1 Protocol 1 9 `ui 1 HeaderChecksum 2 10 `S657 1 SourceAddress 4 12 `S657 1 DestAddress 4 16 ]
+[v IPPutHeader@header header `S4298  1 a 20 19 ]
+"234
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v IPPutHeader@remote remote `*.39S2369  1 p 2 14 ]
+"235
+[v IPPutHeader@protocol protocol `uc  1 p 1 16 ]
+"236
+[v IPPutHeader@len len `ui  1 p 2 17 ]
+"263
+} 0
+"1146 D:\Prj\PIC/tcpip/helpers.c
+[v _CalcIPChecksum CalcIPChecksum `(ui  1 e 2 0 ]
+{
+[u S4087 . 4 `[2]ui 1 w 4 0 `ul 1 dw 4 0 ]
+"1154
+[v CalcIPChecksum@sum sum `S4087  1 a 4 10 ]
+"1149
+[v CalcIPChecksum@val val `*.39ui  1 a 2 8 ]
+"1148
+[v CalcIPChecksum@i i `ui  1 a 2 6 ]
+"1146
+[v CalcIPChecksum@buffer buffer `*.39uc  1 p 2 0 ]
+[v CalcIPChecksum@count count `ui  1 p 2 2 ]
+"1177
+} 0
+"3477 D:\Prj\PIC/tcpip/tcp.c
+[v _GetMaxSegSizeOption GetMaxSegSizeOption `(ui  1 s 2 GetMaxSegSizeOption ]
+{
+"3481
+[v GetMaxSegSizeOption@wMSS wMSS `ui  1 a 2 10 ]
+"3480
+[v GetMaxSegSizeOption@vOption vOption `uc  1 a 1 13 ]
+"3479
+[v GetMaxSegSizeOption@vOptionsBytes vOptionsBytes `uc  1 a 1 12 ]
+"3544
+} 0
+"281 D:\Prj\PIC/tcpip/ip.c
+[v _IPSetRxBuffer IPSetRxBuffer `(v  1 e 0 0 ]
+{
+[v IPSetRxBuffer@Offset Offset `ui  1 p 2 6 ]
+"284
+} 0
+"3180 D:\Prj\PIC/tcpip/tcp.c
+[v _FindMatchingSocket FindMatchingSocket `(uc  1 s 1 FindMatchingSocket ]
+{
+"3275
+[v FindMatchingSocket@wQueueInsertPos wQueueInsertPos `ui  1 a 2 56 ]
+"3184
+[v FindMatchingSocket@hash hash `ui  1 a 2 52 ]
+"3182
+[v FindMatchingSocket@hTCP hTCP `uc  1 a 1 55 ]
+"3183
+[v FindMatchingSocket@partialMatch partialMatch `uc  1 a 1 54 ]
+[s S5867 . 1 `uc 1 Reserved3 1 0 :4:0 
+`uc 1 Val 1 0 :4:4 
+]
+"3180
+[s S5870 . 1 `uc 1 flagFIN 1 0 :1:0 
+`uc 1 flagSYN 1 0 :1:1 
+`uc 1 flagRST 1 0 :1:2 
+`uc 1 flagPSH 1 0 :1:3 
+`uc 1 flagACK 1 0 :1:4 
+`uc 1 flagURG 1 0 :1:5 
+`uc 1 Reserved2 1 0 :2:6 
+]
+[u S5878 . 1 `S5870 1 bits 1 0 `uc 1 byte 1 0 ]
+[s S5881 . 20 `ui 1 SourcePort 2 0 `ui 1 DestPort 2 2 `ul 1 SeqNumber 4 4 `ul 1 AckNumber 4 8 `S5867 1 DataOffset 1 12 `S5878 1 Flags 1 13 `ui 1 Window 2 14 `ui 1 Checksum 2 16 `ui 1 UrgentPointer 2 18 ]
+[v FindMatchingSocket@h h `*.39S5881  1 p 2 40 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v FindMatchingSocket@remote remote `*.39S2369  1 p 2 42 ]
+"3338
+} 0
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"290 D:\Prj\PIC/tcpip/tick.c
+[v _TickGetDiv256 TickGetDiv256 `(ul  1 e 4 0 ]
+{
+"292
+[v TickGetDiv256@dw dw `ul  1 a 4 4 ]
+"301
+} 0
+"429 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACGetHeader MACGetHeader `(uc  1 e 1 0 ]
+{
+[s S1454 . 4 `us 1 ByteCount 2 0 `uc 1 PreviouslyIgnored 1 2 :1:0 
+`uc 1 RXDCPreviouslySeen 1 2 :1:1 
+`uc 1 CarrierPreviouslySeen 1 2 :1:2 
+`uc 1 CodeViolation 1 2 :1:3 
+`uc 1 CRCError 1 2 :1:4 
+`uc 1 LengthCheckError 1 2 :1:5 
+`uc 1 LengthOutOfRange 1 2 :1:6 
+`uc 1 ReceiveOk 1 2 :1:7 
+`uc 1 Multicast 1 3 :1:0 
+`uc 1 Broadcast 1 3 :1:1 
+`uc 1 DribbleNibble 1 3 :1:2 
+`uc 1 ControlFrame 1 3 :1:3 
+`uc 1 PauseControlFrame 1 3 :1:4 
+`uc 1 UnsupportedOpcode 1 3 :1:5 
+`uc 1 VLANType 1 3 :1:6 
+`uc 1 Zero 1 3 :1:7 
+]
+"431
+[u S1472 . 4 `[4]uc 1 v 4 0 `S1454 1 bits 4 0 ]
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S1475 . 20 `us 1 NextPacketPointer 2 0 `S1472 1 StatusVector 4 2 `S669 1 DestMACAddr 6 6 `S669 1 SourceMACAddr 6 12 `S519 1 Type 2 18 ]
+[v MACGetHeader@header header `S1475  1 a 20 36 ]
+"429
+[v MACGetHeader@remote remote `*.39S669  1 p 2 30 ]
+[v MACGetHeader@type type `*.39uc  1 p 2 32 ]
+"527
+} 0
+"118 D:\Prj\PIC/tcpip/ip.c
+[v _IPGetHeader IPGetHeader `(uc  1 e 1 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"124
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S4298 _IP_HEADER 20 `uc 1 VersionIHL 1 0 `uc 1 TypeOfService 1 1 `ui 1 TotalLength 2 2 `ui 1 Identification 2 4 `ui 1 FragmentInfo 2 6 `uc 1 TimeToLive 1 8 `uc 1 Protocol 1 9 `ui 1 HeaderChecksum 2 10 `S657 1 SourceAddress 4 12 `S657 1 DestAddress 4 16 ]
+[v IPGetHeader@header header `S4298  1 a 20 64 ]
+"123
+[v IPGetHeader@CalcChecksum CalcChecksum `S519  1 a 2 62 ]
+"118
+[v IPGetHeader@localIP localIP `*.39S657  1 p 2 50 ]
+"119
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v IPGetHeader@remote remote `*.39S2369  1 p 2 52 ]
+"120
+[v IPGetHeader@protocol protocol `*.39uc  1 p 2 54 ]
+"121
+[v IPGetHeader@len len `*.39ui  1 p 2 56 ]
+"211
+} 0
+"288
+[v _SwapIPHeader SwapIPHeader `(v  1 s 0 SwapIPHeader ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S4298 _IP_HEADER 20 `uc 1 VersionIHL 1 0 `uc 1 TypeOfService 1 1 `ui 1 TotalLength 2 2 `ui 1 Identification 2 4 `ui 1 FragmentInfo 2 6 `uc 1 TimeToLive 1 8 `uc 1 Protocol 1 9 `ui 1 HeaderChecksum 2 10 `S657 1 SourceAddress 4 12 `S657 1 DestAddress 4 16 ]
+[v SwapIPHeader@h h `*.39S4298  1 p 2 5 ]
+"293
+} 0
+"671 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACSetReadPtrInRx MACSetReadPtrInRx `(v  1 e 0 0 ]
+{
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"673
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[v MACSetReadPtrInRx@ReadPT ReadPT `S519  1 a 2 4 ]
+"671
+[v MACSetReadPtrInRx@offset offset `ui  1 p 2 0 ]
+"686
+} 0
+"759
+[v _MACCalcRxChecksum MACCalcRxChecksum `(ui  1 e 2 0 ]
+{
+"761
+[v MACCalcRxChecksum@temp temp `us  1 a 2 48 ]
+"762
+[v MACCalcRxChecksum@RDSave RDSave `us  1 a 2 46 ]
+"759
+[v MACCalcRxChecksum@offset offset `ui  1 p 2 40 ]
+[v MACCalcRxChecksum@len len `ui  1 p 2 42 ]
+"777
+} 0
+"880
+[v _CalcIPBufferChecksum CalcIPBufferChecksum `(ui  1 e 2 0 ]
+{
+"885
+[v CalcIPBufferChecksum@DataBuffer DataBuffer `[20]uc  1 a 20 10 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"883
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v CalcIPBufferChecksum@Checksum Checksum `S657  1 a 4 34 ]
+"884
+[v CalcIPBufferChecksum@ChunkLen ChunkLen `us  1 a 2 38 ]
+"886
+[v CalcIPBufferChecksum@DataPtr DataPtr `*.39us  1 a 2 32 ]
+"882
+[v CalcIPBufferChecksum@Start Start `us  1 a 2 30 ]
+"880
+[v CalcIPBufferChecksum@len len `ui  1 p 2 6 ]
+"883
+[v CalcIPBufferChecksum@F7102 F7102 `S657  1 s 4 F7102 ]
+"928
+} 0
+"413 D:\Prj\PIC/tcpip/arp.c
+[v _ARPProcess ARPProcess `(uc  1 e 1 0 ]
+{
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+"415
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S2372 . 28 `ui 1 HardwareType 2 0 `ui 1 Protocol 2 2 `uc 1 MACAddrLen 1 4 `uc 1 ProtocolLen 1 5 `ui 1 Operation 2 6 `S669 1 SenderMACAddr 6 8 `S657 1 SenderIPAddr 4 14 `S669 1 TargetMACAddr 6 18 `S657 1 TargetIPAddr 4 24 ]
+[v ARPProcess@packet packet `S2372  1 a 28 32 ]
+"416
+[s S2369 . 10 `S657 1 IPAddr 4 0 `S669 1 MACAddr 6 4 ]
+[v ARPProcess@Target Target `S2369  1 s 10 Target ]
+"424
+[v ARPProcess@smARP smARP `E7055  1 s 1 smARP ]
+"539
+} 0
+"321 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACDiscardRx MACDiscardRx `(v  1 e 0 0 ]
+{
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"323
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[v MACDiscardRx@NewRXRDLocation NewRXRDLocation `S519  1 a 2 0 ]
+"352
+} 0
+"320 D:\Prj\PIC/tcpip/arp.c
+[v _ARPPut ARPPut `(uc  1 s 1 ARPPut ]
+{
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S2372 . 28 `ui 1 HardwareType 2 0 `ui 1 Protocol 2 2 `uc 1 MACAddrLen 1 4 `uc 1 ProtocolLen 1 5 `ui 1 Operation 2 6 `S669 1 SenderMACAddr 6 8 `S657 1 SenderIPAddr 4 14 `S669 1 TargetMACAddr 6 18 `S657 1 TargetIPAddr 4 24 ]
+[v ARPPut@packet packet `*.39S2372  1 p 2 30 ]
+"345
+} 0
+"688
+[v _SwapARPPacket SwapARPPacket `(v  1 e 0 0 ]
+{
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[s S2372 . 28 `ui 1 HardwareType 2 0 `ui 1 Protocol 2 2 `uc 1 MACAddrLen 1 4 `uc 1 ProtocolLen 1 5 `ui 1 Operation 2 6 `S669 1 SenderMACAddr 6 8 `S657 1 SenderIPAddr 4 14 `S669 1 TargetMACAddr 6 18 `S657 1 TargetIPAddr 4 24 ]
+[v SwapARPPacket@p p `*.39S2372  1 p 2 5 ]
+"693
+} 0
+"1071 D:\Prj\PIC/tcpip/helpers.c
+[v _swaps swaps `(ui  1 e 2 0 ]
+{
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"1073
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[v swaps@t t `S519  1 a 2 3 ]
+"1074
+[v swaps@b b `uc  1 a 1 2 ]
+"1071
+[v swaps@v v `ui  1 p 2 0 ]
+"1082
+} 0
+"554 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACPutHeader MACPutHeader `(v  1 e 0 0 ]
+{
+[s S669 . 6 `[6]uc 1 v 6 0 ]
+[v MACPutHeader@remote remote `*.39S669  1 p 2 4 ]
+[v MACPutHeader@type type `uc  1 p 1 6 ]
+[v MACPutHeader@dataLen dataLen `ui  1 p 2 7 ]
+"575
+} 0
+"285
+[v _MACIsTxReady MACIsTxReady `(uc  1 e 1 0 ]
+{
+"299
+} 0
+"600
+[v _MACFlush MACFlush `(v  1 e 0 0 ]
+{
+"610
+[v MACFlush@i i `VEuc  1 a 1 12 ]
+"646
+} 0
+"254 D:\Prj\PIC/tcpip/tick.c
+[v _TickGet TickGet `(ul  1 e 4 0 ]
+{
+"256
+[v TickGet@dw dw `ul  1 a 4 4 ]
+"264
+} 0
+"140
+[v _GetTickCopy GetTickCopy `(v  1 s 0 GetTickCopy ]
+{
+"227
+} 0
+"35 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _RestoreFromFlash RestoreFromFlash `(v  1 e 0 0 ]
+{
+"50
+[v RestoreFromFlash@chSum chSum `uc  1 a 1 28 ]
+"37
+[v RestoreFromFlash@addr addr `ul  1 a 4 29 ]
+"38
+[v RestoreFromFlash@addrStop addrStop `ul  1 a 4 24 ]
+"59
+} 0
+"23 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\ReadFlash.c
+[v _ReadFlash ReadFlash `(v  1 e 0 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+"27
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v ReadFlash@tblptr_save tblptr_save `S657  1 a 4 12 ]
+"25
+[v ReadFlash@flash_addr flash_addr `S657  1 a 4 8 ]
+"23
+[v ReadFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v ReadFlash@num_bytes num_bytes `ui  1 p 2 4 ]
+[v ReadFlash@flash_array flash_array `*.39uc  1 p 2 6 ]
+"57
+} 0
+"122 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v _GetCheckSum GetCheckSum `(uc  1 e 1 0 ]
+{
+"125
+[v GetCheckSum@i i `uc  1 a 1 4 ]
+"124
+[v GetCheckSum@res res `uc  1 a 1 3 ]
+"122
+[v GetCheckSum@data data `*.39uc  1 p 2 0 ]
+[v GetCheckSum@dataLen dataLen `uc  1 p 1 2 ]
+"131
+} 0
+"19 D:\Prj\PIC\DACVolume.X\SLCD/openslcd.c
+[v _OpenSLCD OpenSLCD `(v  1 e 0 0 ]
+{
+[v OpenSLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+[v OpenSLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+"24
+[v OpenSLCD@lcdtype lcdtype `uc  1 a 1 2 ]
+"77
+} 0
+"13 D:\Prj\PIC\DACVolume.X\SLCD/setddram.c
+[v _SLCDSetDDRamAddr SLCDSetDDRamAddr `T(v  1 e 0 0 ]
+{
+[v SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 1 ]
+"17
+} 0
+"13 D:\Prj\PIC\DACVolume.X\SLCD/wcmdslcd.c
+[v _WriteCmdSLCD WriteCmdSLCD `(v  1 e 0 0 ]
+{
+[v WriteCmdSLCD@cmd cmd `uc  1 a 1 wreg ]
+[v WriteCmdSLCD@cmd cmd `uc  1 a 1 wreg ]
+"16
+[v WriteCmdSLCD@cmd cmd `uc  1 a 1 0 ]
+"61
+} 0
+"11 D:\Prj\PIC\DACVolume.X\SLCD/busyslcd.c
+[v _BusySLCD BusySLCD `(uc  1 e 1 0 ]
+{
+"57
+} 0
+"16 D:\Prj\PIC\DACVolume.X\LCDDelay.c
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+{
+"43
+} 0
+"5
+[v _DelayPORSLCD DelayPORSLCD `(v  1 e 0 0 ]
+{
+"9
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+{
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
+"13
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+{
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 1 ]
+"13
+} 0
+"105 D:\Prj\PIC\DACVolume.X\main.c
+[v _Configure Configure `(v  1 e 0 0 ]
+{
+"145
+} 0
+"79 D:\Prj\PIC/tcpip/tick.c
+[v _TickInit TickInit `(v  1 e 0 0 ]
+{
+"118
+} 0
+"94 D:\Prj\PIC/tcpip/stack_task.c
+[v _StackInit StackInit `(v  1 e 0 0 ]
+{
+"96
+[v StackInit@once once `uc  1 s 1 once ]
+"182
+} 0
+"332 D:\Prj\PIC/tcpip/tcp.c
+[v _TCPInit TCPInit `(v  1 e 0 0 ]
+{
+"340
+[v TCPInit@wCurrentETHAddress wCurrentETHAddress `ui  1 a 2 63 ]
+"336
+[v TCPInit@wRXSize wRXSize `ui  1 a 2 61 ]
+[v TCPInit@wTXSize wTXSize `ui  1 a 2 59 ]
+"337
+[v TCPInit@ptrBaseAddress ptrBaseAddress `us  1 a 2 57 ]
+"334
+[v TCPInit@i i `uc  1 a 1 66 ]
+"338
+[v TCPInit@vMedium vMedium `uc  1 a 1 65 ]
+"335
+[v TCPInit@vSocketsAllocated vSocketsAllocated `uc  1 a 1 56 ]
+"430
+} 0
+"257
+[v _SyncTCBStub SyncTCBStub `(v  1 s 0 SyncTCBStub ]
+{
+[v SyncTCBStub@hTCP hTCP `uc  1 a 1 wreg ]
+[v SyncTCBStub@hTCP hTCP `uc  1 a 1 wreg ]
+"259
+[v SyncTCBStub@hTCP hTCP `uc  1 a 1 32 ]
+"275
+} 0
+"196 D:\Prj\PIC/tcpip/helpers.c
+[v _GenerateRandomDWORD GenerateRandomDWORD `(ul  1 e 4 0 ]
+{
+"210
+[v GenerateRandomDWORD@TMR0LSave TMR0LSave `uc  1 a 1 41 ]
+[v GenerateRandomDWORD@TMR0HSave TMR0HSave `uc  1 a 1 40 ]
+[v GenerateRandomDWORD@T0CONSave T0CONSave `uc  1 a 1 39 ]
+"209
+[v GenerateRandomDWORD@ADCON2Save ADCON2Save `uc  1 a 1 38 ]
+[v GenerateRandomDWORD@ADCON0Save ADCON0Save `uc  1 a 1 37 ]
+[u S3802 . 4 `ul 1 dw 4 0 `[2]ui 1 w 4 0 ]
+"205
+[v GenerateRandomDWORD@randomResult randomResult `S3802  1 a 4 44 ]
+"200
+[v GenerateRandomDWORD@dwTotalTime dwTotalTime `ul  1 a 4 32 ]
+"199
+[v GenerateRandomDWORD@wTime wTime `ui  1 a 2 48 ]
+[v GenerateRandomDWORD@wLastValue wLastValue `ui  1 a 2 42 ]
+[v GenerateRandomDWORD@w w `ui  1 a 2 30 ]
+"198
+[v GenerateRandomDWORD@vBitCount vBitCount `uc  1 a 1 36 ]
+"353
+} 0
+"84
+[v _LFSRSeedRand LFSRSeedRand `(ul  1 e 4 0 ]
+{
+"86
+[v LFSRSeedRand@dwOldSeed dwOldSeed `ul  1 a 4 19 ]
+"87
+[v LFSRSeedRand@i i `uc  1 a 1 23 ]
+"84
+[v LFSRSeedRand@dwSeed dwSeed `ul  1 p 4 15 ]
+"107
+} 0
+"3395 D:\Prj\PIC/tcpip/tcp.c
+[v _CloseSocket CloseSocket `(v  1 s 0 CloseSocket ]
+{
+"3447
+} 0
+"288
+[v _SyncTCB SyncTCB `(v  1 s 0 SyncTCB ]
+{
+"290
+[v SyncTCB@hLastTCB hLastTCB `uc  1 s 1 hLastTCB ]
+"304
+} 0
+"4510
+[v _TCPRAMCopy TCPRAMCopy `(v  1 s 0 TCPRAMCopy ]
+{
+[v TCPRAMCopy@ptrDest ptrDest `us  1 p 2 30 ]
+[v TCPRAMCopy@vDestType vDestType `uc  1 p 1 32 ]
+[v TCPRAMCopy@ptrSource ptrSource `us  1 p 2 33 ]
+[v TCPRAMCopy@vSourceType vSourceType `uc  1 p 1 35 ]
+[v TCPRAMCopy@wLength wLength `ui  1 p 2 36 ]
+"4619
+} 0
+"705 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACSetWritePtr MACSetWritePtr `(us  1 e 2 0 ]
+{
+"707
+[v MACSetWritePtr@oldVal oldVal `us  1 a 2 2 ]
+"705
+[v MACSetWritePtr@address address `us  1 p 2 0 ]
+"712
+} 0
+"730
+[v _MACSetReadPtr MACSetReadPtr `(us  1 e 2 0 ]
+{
+"732
+[v MACSetReadPtr@oldVal oldVal `us  1 a 2 2 ]
+"730
+[v MACSetReadPtr@address address `us  1 p 2 0 ]
+"737
+} 0
+"1194
+[v _MACPutArray MACPutArray `(v  1 e 0 0 ]
+{
+[v MACPutArray@val val `*.39uc  1 p 2 0 ]
+[v MACPutArray@len len `ui  1 p 2 2 ]
+"1209
+} 0
+"954
+[v _MACMemCopyAsync MACMemCopyAsync `(v  1 e 0 0 ]
+{
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"956
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[v MACMemCopyAsync@WriteSave WriteSave `S519  1 a 2 13 ]
+[v MACMemCopyAsync@ReadSave ReadSave `S519  1 a 2 11 ]
+"958
+[v MACMemCopyAsync@UpdateReadPointer UpdateReadPointer `E5595  1 a 1 16 ]
+"957
+[v MACMemCopyAsync@UpdateWritePointer UpdateWritePointer `E5595  1 a 1 15 ]
+"954
+[v MACMemCopyAsync@destAddr destAddr `us  1 p 2 1 ]
+[v MACMemCopyAsync@sourceAddr sourceAddr `us  1 p 2 3 ]
+[v MACMemCopyAsync@len len `ui  1 p 2 5 ]
+"1016
+} 0
+"1079
+[v _MACGet MACGet `(uc  1 e 1 0 ]
+{
+"1087
+} 0
+"1056
+[v _MACIsMemCopyDone MACIsMemCopyDone `(uc  1 e 1 0 ]
+{
+"1059
+} 0
+"1108
+[v _MACGetArray MACGetArray `(ui  1 e 2 0 ]
+{
+"1110
+[v MACGetArray@w w `us  1 a 2 4 ]
+"1108
+[v MACGetArray@val val `*.39uc  1 p 2 0 ]
+[v MACGetArray@len len `ui  1 p 2 2 ]
+"1142
+} 0
+"142 D:\Prj\PIC/tcpip/helpers.c
+[v _LFSRRand LFSRRand `(ui  1 e 2 0 ]
+{
+"144
+[v LFSRRand@i i `uc  1 a 1 14 ]
+"154
+} 0
+"145 D:\Prj\PIC/tcpip/ETH97J60.c
+[v _MACInit MACInit `(v  1 e 0 0 ]
+{
+"233
+} 0
+"1288
+[v _WritePHYReg WritePHYReg `(v  1 e 0 0 ]
+{
+[v WritePHYReg@Register Register `uc  1 a 1 wreg ]
+"1290
+[v WritePHYReg@GIESave GIESave `uc  1 a 1 3 ]
+"1288
+[v WritePHYReg@Register Register `uc  1 a 1 wreg ]
+[v WritePHYReg@Data Data `ui  1 p 2 0 ]
+"1293
+[v WritePHYReg@Register Register `uc  1 a 1 2 ]
+"1329
+} 0
+"1161
+[v _MACPut MACPut `(v  1 e 0 0 ]
+{
+[v MACPut@val val `uc  1 a 1 wreg ]
+[v MACPut@val val `uc  1 a 1 wreg ]
+"1167
+[v MACPut@val val `uc  1 a 1 0 ]
+"1173
+} 0
+"374 D:\Prj\PIC/tcpip/arp.c
+[v _ARPInit ARPInit `(v  1 e 0 0 ]
+{
+"384
+} 0
+"304 D:\Prj\PIC\DACVolume.X\Device.c
+[v _PowerOff PowerOff `(v  1 e 0 0 ]
+{
+"308
+} 0
+"35 D:\Prj\PIC\DACVolume.X\IR.c
+[v _InitrIR InitrIR `T(v  1 e 0 0 ]
+{
+"42
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 6 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"82 D:\Prj\PIC\DACVolume.X\main.c
+[v _InitAppConfig InitAppConfig `(v  1 s 0 InitAppConfig ]
+{
+"103
+} 0
+"11 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"20
+[v memcpy@s s `*.34Cuc  1 a 2 28 ]
+"18
+[v memcpy@d d `*.39uc  1 a 2 26 ]
+"11
+[v memcpy@d1 d1 `*.39v  1 p 2 20 ]
+[v memcpy@s1 s1 `*.34Cv  1 p 2 22 ]
+[v memcpy@n n `ui  1 p 2 24 ]
+"32
+} 0
+"1323 D:\Prj\PIC/tcpip/helpers.c
+[v _FormatNetBIOSName FormatNetBIOSName `(v  1 e 0 0 ]
+{
+"1325
+[v FormatNetBIOSName@i i `uc  1 a 1 7 ]
+"1323
+[v FormatNetBIOSName@Name Name `*.39uc  1 p 2 5 ]
+"1342
+} 0
+"1201
+[v _strupr strupr `(*.39uc  1 e 2 0 ]
+{
+"1204
+[v strupr@t t `*.39uc  1 a 2 2 ]
+"1203
+[v strupr@c c `uc  1 a 1 4 ]
+"1201
+[v strupr@s s `*.39uc  1 p 2 0 ]
+"1216
+} 0
+"151 D:\Prj\PIC\DACVolume.X\main.c
+[v _ISRLP ISRLP `II(v  1 e 0 0 ]
+{
+"168
+[v ISRLP@currentTS currentTS `ul  1 a 4 78 ]
+"169
+[v ISRLP@diff diff `ul  1 a 4 74 ]
+"172
+[v ISRLP@d d `c  1 a 1 82 ]
+"225
+} 0
+"83 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v i2_SaveToFlash SaveToFlash `(v  1 e 0 0 ]
+{
+[v i2SaveToFlash@emptyAddr SaveToFlash `ul  1 a 4 59 ]
+[v i2SaveToFlash@addr SaveToFlash `ul  1 a 4 52 ]
+[v i2SaveToFlash@cmp SaveToFlash `i  1 a 2 56 ]
+[v i2SaveToFlash@success SaveToFlash `uc  1 a 1 58 ]
+"120
+} 0
+"119 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\WriteBlockFlash.c
+[v i2_WriteBlockFlash WriteBlockFlash `(v  1 e 0 0 ]
+{
+[v i2WriteBlockFlash@saddress WriteBlockFlash `ul  1 a 4 13 ]
+[v i2WriteBlockFlash@startptr WriteBlockFlash `*.33uc  1 a 3 8 ]
+[v i2WriteBlockFlash@flag WriteBlockFlash `uc  1 a 1 12 ]
+[v i2WriteBlockFlash@write_byte WriteBlockFlash `uc  1 a 1 11 ]
+[v i2WriteBlockFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v i2WriteBlockFlash@num_blocks num_blocks `uc  1 p 1 4 ]
+[v i2WriteBlockFlash@flash_array flash_array `*.39uc  1 p 2 5 ]
+"206
+} 0
+"122 D:\Prj\PIC\DACVolume.X\Persistence.c
+[v i2_GetCheckSum GetCheckSum `(uc  1 e 1 0 ]
+{
+[v i2GetCheckSum@i GetCheckSum `uc  1 a 1 4 ]
+[v i2GetCheckSum@res GetCheckSum `uc  1 a 1 3 ]
+[v i2GetCheckSum@data data `*.39uc  1 p 2 0 ]
+[v i2GetCheckSum@dataLen dataLen `uc  1 p 1 2 ]
+"131
+} 0
+"61
+[v i2_FindEmpty FindEmpty `(ul  1 e 4 0 ]
+{
+[v i2FindEmpty@addr FindEmpty `ul  1 a 4 34 ]
+[v i2FindEmpty@addrStop FindEmpty `ul  1 a 4 28 ]
+[v i2FindEmpty@tmpAddr FindEmpty `*.39uc  1 a 2 38 ]
+[v i2FindEmpty@blockEnd FindEmpty `*.39uc  1 a 2 32 ]
+[v i2FindEmpty@startAddr startAddr `ul  1 p 4 16 ]
+"81
+} 0
+"23 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\ReadFlash.c
+[v i2_ReadFlash ReadFlash `(v  1 e 0 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v i2ReadFlash@tblptr_save ReadFlash `S657  1 a 4 12 ]
+[v i2ReadFlash@flash_addr ReadFlash `S657  1 a 4 8 ]
+[v i2ReadFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v i2ReadFlash@num_bytes num_bytes `ui  1 p 2 4 ]
+[v i2ReadFlash@flash_array flash_array `*.39uc  1 p 2 6 ]
+"57
+} 0
+"59 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\Flash\EraseFlash.c
+[v i2_EraseFlash EraseFlash `(v  1 e 0 0 ]
+{
+[s S588 . 4 `ui 1 LW 2 0 `ui 1 HW 2 2 ]
+[s S591 . 4 `uc 1 LB 1 0 `uc 1 HB 1 1 `uc 1 UB 1 2 `uc 1 MB 1 3 ]
+[s S499 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S502 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S519 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S499 1 byte 2 0 `S502 1 bits 2 0 ]
+[s S621 . 4 `S519 1 low 2 0 `S519 1 high 2 2 ]
+[s S624 . 4 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+`uc 1 b16 1 2 :1:0 
+`uc 1 b17 1 2 :1:1 
+`uc 1 b18 1 2 :1:2 
+`uc 1 b19 1 2 :1:3 
+`uc 1 b20 1 2 :1:4 
+`uc 1 b21 1 2 :1:5 
+`uc 1 b22 1 2 :1:6 
+`uc 1 b23 1 2 :1:7 
+`uc 1 b24 1 3 :1:0 
+`uc 1 b25 1 3 :1:1 
+`uc 1 b26 1 3 :1:2 
+`uc 1 b27 1 3 :1:3 
+`uc 1 b28 1 3 :1:4 
+`uc 1 b29 1 3 :1:5 
+`uc 1 b30 1 3 :1:6 
+`uc 1 b31 1 3 :1:7 
+]
+[u S657 . 4 `ul 1 Val 4 0 `[2]ui 1 w 4 0 `[4]uc 1 v 4 0 `S588 1 word 4 0 `S591 1 byte 4 0 `S621 1 wordUnion 4 0 `S624 1 bits 4 0 ]
+[v i2EraseFlash@flash_addr EraseFlash `S657  1 a 4 9 ]
+[v i2EraseFlash@flag EraseFlash `uc  1 a 1 8 ]
+[v i2EraseFlash@startaddr startaddr `ul  1 p 4 0 ]
+[v i2EraseFlash@endaddr endaddr `ul  1 p 4 4 ]
+"87
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d1ktcyx.c
+[v i2_Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+{
+[v i2Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v i2Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v i2Delay1KTCYx@unit unit `uc  1 a 1 0 ]
+"13
+} 0
+"391 D:\Prj\PIC/tcpip/tick.c
+[v _TickUpdate TickUpdate `(v  1 e 0 0 ]
+{
+"400
+} 0
+"105 D:\Prj\PIC\DACVolume.X\IR.c
+[v _ProcessIRInt ProcessIRInt `(v  1 e 0 0 ]
+{
+"111
+[v ProcessIRInt@numTicks numTicks `ul  1 a 4 16 ]
+"112
+[v ProcessIRInt@diff diff `ul  1 a 4 12 ]
+"146
+} 0
+"44
+[v _ReInitTimer ReInitTimer `T(v  1 e 0 0 ]
+{
+"54
+} 0
+"91
+[v _IRTimerInt IRTimerInt `T(v  1 e 0 0 ]
+{
+"103
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+[v i2memset@p memset `*.39uc  1 a 2 6 ]
+[v i2memset@p1 p1 `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"56 D:\Prj\PIC\DACVolume.X\IR.c
+[v _ProcessIRCode ProcessIRCode `T(v  1 e 0 0 ]
+{
+"58
+[v ProcessIRCode@numTick numTick `ul  1 a 4 51 ]
+"72
+[v ProcessIRCode@delta delta `uc  1 a 1 55 ]
+"89
+} 0
+"3 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\memcmp.c
+[v i2_memcmp memcmp `(i  1 e 2 0 ]
+{
+[v i2memcmp@s1 s1 `*.34Cv  1 p 2 0 ]
+[v i2memcmp@s2 s2 `*.39Cv  1 p 2 2 ]
+[v i2memcmp@n n `ui  1 p 2 4 ]
+"12
+} 0
+"254 D:\Prj\PIC/tcpip/tick.c
+[v i2_TickGet TickGet `(ul  1 e 4 0 ]
+{
+[v i2TickGet@dw TickGet `ul  1 a 4 4 ]
+"264
+} 0
+"140
+[v i2_GetTickCopy GetTickCopy `(v  1 s 0 i2_GetTickCopy ]
+{
+"227
+} 0
+"283 D:\Prj\PIC\DACVolume.X\Device.c
+[v i2_PowerOn PowerOn `(v  1 e 0 0 ]
+{
+"302
+} 0
+"234
+[v i2_UpdateSampleRate UpdateSampleRate `(v  1 e 0 0 ]
+{
+[v i2UpdateSampleRate@srStr UpdateSampleRate `*.32Cuc  1 a 2 5 ]
+"281
+} 0
+"25 D:\Prj\PIC\DACVolume.X\LCD.c
+[v i2_RefreshLine2Ex RefreshLine2Ex `T(v  1 e 0 0 ]
+{
+[v i2RefreshLine2Ex@line line `*.34Cuc  1 p 2 3 ]
+"29
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\d10ktcyx.c
+[v i2_Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+{
+[v i2Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v i2Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v i2Delay10KTCYx@unit unit `uc  1 a 1 1 ]
+"13
+} 0
+"304 D:\Prj\PIC\DACVolume.X\Device.c
+[v i2_PowerOff PowerOff `(v  1 e 0 0 ]
+{
+"308
+} 0
+"173
+[v _ChangeMasterVolume ChangeMasterVolume `(v  1 e 0 0 ]
+{
+[v ChangeMasterVolume@d d `c  1 a 1 wreg ]
+"175
+[v ChangeMasterVolume@prev prev `uc  1 a 1 92 ]
+"173
+[v ChangeMasterVolume@d d `c  1 a 1 wreg ]
+"175
+[v ChangeMasterVolume@d d `c  1 a 1 93 ]
+"181
+} 0
+"161
+[v i2_UpdateMasterVolume UpdateMasterVolume `T(v  1 e 0 0 ]
+{
+[v i2UpdateMasterVolume@dvol UpdateMasterVolume `d  1 a 3 88 ]
+[v i2UpdateMasterVolume@i UpdateMasterVolume `uc  1 a 1 91 ]
+"171
+} 0
+"492 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S9344 . 5 `*.39Cuc 1 _cp 3 0 `ui 1 _len 2 3 ]
+[u S9347 . 5 `ul 1 _val 4 0 `S9344 1 _str 5 0 ]
+[v i2sprintf@_val sprintf `S9347  1 a 5 22 ]
+[v i2sprintf@vd_9359 sprintf `ul  1 a 4 13 ]
+[v i2sprintf@vd sprintf `ul  1 a 4 9 ]
+[v i2sprintf@fval sprintf `d  1 a 3 33 ]
+[v i2sprintf@integ sprintf `d  1 a 3 19 ]
+[v i2sprintf@prec sprintf `i  1 a 2 36 ]
+[v i2sprintf@exp sprintf `i  1 a 2 31 ]
+[v i2sprintf@width sprintf `i  1 a 2 29 ]
+[v i2sprintf@flag sprintf `us  1 a 2 27 ]
+[v i2sprintf@ccnt sprintf `i  1 a 2 17 ]
+[v i2sprintf@ap sprintf `[1]*.39v  1 a 2 7 ]
+[v i2sprintf@c sprintf `c  1 a 1 38 ]
+[v i2sprintf@sp sp `*.39uc  1 p 2 72 ]
+[v i2sprintf@f f `*.32Cuc  1 p 2 74 ]
+"1550
+} 0
+"425
+[v i2_scale scale `(d  1 s 3 i2_scale ]
+{
+[v i2scale@scl scl `c  1 a 1 wreg ]
+[v i2scale@scl scl `c  1 a 1 wreg ]
+"428
+[v i2scale@scl scl `c  1 a 1 41 ]
+"441
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
+[v i2_isdigit isdigit `(b  1 e 0 0 ]
+{
+[v i2isdigit@c c `uc  1 a 1 wreg ]
+[v i2isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v i2isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"409 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
+[v i2_fround fround `(d  1 s 3 i2_fround ]
+{
+[v i2fround@prec prec `uc  1 a 1 wreg ]
+[v i2fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v i2fround@prec prec `uc  1 a 1 44 ]
+"418
+} 0
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i2___wmul@product __wmul `ui  1 a 2 18 ]
+[v i2___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+{
+[v i2___awmod@sign __awmod `uc  1 a 1 5 ]
+[v i2___awmod@counter __awmod `uc  1 a 1 4 ]
+[v i2___awmod@dividend dividend `i  1 p 2 0 ]
+[v i2___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+[v i2___awdiv@quotient __awdiv `i  1 a 2 12 ]
+[v i2___awdiv@sign __awdiv `uc  1 a 1 11 ]
+[v i2___awdiv@counter __awdiv `uc  1 a 1 10 ]
+[v i2___awdiv@dividend dividend `i  1 p 2 6 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdivl.c
+[v i2__tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+[v i2__tdiv_to_l_@quot _tdiv_to_l_ `ul  1 a 4 9 ]
+[v i2__tdiv_to_l_@exp1 _tdiv_to_l_ `uc  1 a 1 14 ]
+[v i2__tdiv_to_l_@cntr _tdiv_to_l_ `uc  1 a 1 13 ]
+[v i2__tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v i2__tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fldivl.c
+[v i2__div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+[v i2__div_to_l_@quot _div_to_l_ `ul  1 a 4 10 ]
+[v i2__div_to_l_@exp1 _div_to_l_ `uc  1 a 1 15 ]
+[v i2__div_to_l_@cntr _div_to_l_ `uc  1 a 1 14 ]
+[v i2__div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v i2__div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v i2___lltoft __lltoft `(f  1 e 3 0 ]
+{
+[v i2___lltoft@exp __lltoft `uc  1 a 1 16 ]
+[v i2___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v i2___llmod __llmod `(ul  1 e 4 0 ]
+{
+[v i2___llmod@counter __llmod `uc  1 a 1 8 ]
+[v i2___llmod@dividend dividend `ul  1 p 4 0 ]
+[v i2___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
+"8 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v i2___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+[v i2___lldiv@quotient __lldiv `ul  1 a 4 8 ]
+[v i2___lldiv@counter __lldiv `uc  1 a 1 12 ]
+[v i2___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v i2___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"20 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v i2___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v i2___ftsub@f1 f1 `f  1 p 3 57 ]
+[v i2___ftsub@f2 f2 `f  1 p 3 60 ]
+"25
+} 0
+"15 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v i2___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v i2___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+{
+[v i2___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v i2___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"49 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v i2___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+[v i2___ftdiv@f3 __ftdiv `f  1 a 3 22 ]
+[v i2___ftdiv@sign __ftdiv `uc  1 a 1 26 ]
+[v i2___ftdiv@exp __ftdiv `uc  1 a 1 25 ]
+[v i2___ftdiv@cntr __ftdiv `uc  1 a 1 21 ]
+[v i2___ftdiv@f1 f1 `f  1 p 3 12 ]
+[v i2___ftdiv@f2 f2 `f  1 p 3 15 ]
+"78
+} 0
+"32 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v i2___awtoft __awtoft `(f  1 e 3 0 ]
+{
+[v i2___awtoft@sign __awtoft `uc  1 a 1 11 ]
+[v i2___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"224 D:\Prj\PIC\DACVolume.X\Device.c
+[v i2_SendVolumeToDevice SendVolumeToDevice `(v  1 e 0 0 ]
+{
+"232
+} 0
+"192
+[v i2_SendDataToDeviceCh SendDataToDeviceCh `(v  1 e 0 0 ]
+{
+[v i2SendDataToDeviceCh@offset offset `uc  1 a 1 wreg ]
+[v i2SendDataToDeviceCh@values SendDataToDeviceCh `[8]ui  1 a 16 0 ]
+[v i2SendDataToDeviceCh@mask SendDataToDeviceCh `ui  1 a 2 20 ]
+[v i2SendDataToDeviceCh@v SendDataToDeviceCh `ui  1 a 2 16 ]
+[v i2SendDataToDeviceCh@i SendDataToDeviceCh `uc  1 a 1 19 ]
+[v i2SendDataToDeviceCh@offset offset `uc  1 a 1 wreg ]
+"196
+[v i2SendDataToDeviceCh@offset offset `uc  1 a 1 18 ]
+"221
+} 0
+"64
+[v i2_DbToCode DbToCode `(ui  1 e 2 0 ]
+{
+[v i2DbToCode@k DbToCode `d  1 a 3 80 ]
+[v i2DbToCode@volume volume `ui  1 p 2 72 ]
+"148
+} 0
+"28 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v i2___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v i2___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"44 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v i2___fttol __fttol `(l  1 e 4 0 ]
+{
+[v i2___fttol@lval __fttol `ul  1 a 4 67 ]
+[v i2___fttol@exp1 __fttol `uc  1 a 1 71 ]
+[v i2___fttol@sign1 __fttol `uc  1 a 1 66 ]
+[v i2___fttol@f1 f1 `f  1 p 3 57 ]
+"73
+} 0
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v i2___ftmul __ftmul `(f  1 e 3 0 ]
+{
+[v i2___ftmul@f3_as_product __ftmul `um  1 a 3 30 ]
+[v i2___ftmul@sign __ftmul `uc  1 a 1 34 ]
+[v i2___ftmul@cntr __ftmul `uc  1 a 1 33 ]
+[v i2___ftmul@exp __ftmul `uc  1 a 1 29 ]
+[v i2___ftmul@f1 f1 `f  1 p 3 20 ]
+[v i2___ftmul@f2 f2 `f  1 p 3 23 ]
+"157
+} 0
+"86 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v i2___ftadd __ftadd `(f  1 e 3 0 ]
+{
+[v i2___ftadd@exp1 __ftadd `uc  1 a 1 56 ]
+[v i2___ftadd@exp2 __ftadd `uc  1 a 1 55 ]
+[v i2___ftadd@sign __ftadd `uc  1 a 1 54 ]
+[v i2___ftadd@f1 f1 `f  1 p 3 45 ]
+[v i2___ftadd@f2 f2 `f  1 p 3 48 ]
+"148
+} 0
+"62 D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v i2___ftpack@arg arg `um  1 p 3 0 ]
+[v i2___ftpack@exp exp `uc  1 p 1 3 ]
+[v i2___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"7 D:\Prj\PIC\DACVolume.X\LCD.c
+[v i2_RefreshLine1 RefreshLine1 `T(v  1 e 0 0 ]
+{
+"10
+} 0
+"18
+[v i2_RefreshLine1Ex RefreshLine1Ex `T(v  1 e 0 0 ]
+{
+[v i2RefreshLine1Ex@line line `*.34Cuc  1 p 2 3 ]
+"23
+} 0
+"13 D:\Prj\PIC\DACVolume.X\SLCD/setddram.c
+[v i2_SLCDSetDDRamAddr SLCDSetDDRamAddr `T(v  1 e 0 0 ]
+{
+[v i2SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v i2SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v i2SLCDSetDDRamAddr@DDaddr DDaddr `uc  1 a 1 1 ]
+"17
+} 0
+"13 D:\Prj\PIC\DACVolume.X\SLCD/wcmdslcd.c
+[v i2_WriteCmdSLCD WriteCmdSLCD `(v  1 e 0 0 ]
+{
+[v i2WriteCmdSLCD@cmd cmd `uc  1 a 1 wreg ]
+[v i2WriteCmdSLCD@cmd cmd `uc  1 a 1 wreg ]
+"16
+[v i2WriteCmdSLCD@cmd cmd `uc  1 a 1 0 ]
+"61
+} 0
+"16 D:\Prj\PIC\DACVolume.X\SLCD/putsslcd.c
+[v i2_PutsSLCD PutsSLCD `(v  1 e 0 0 ]
+{
+[v i2PutsSLCD@buffer buffer `*.34Cuc  1 p 2 1 ]
+"25
+} 0
+"16 D:\Prj\PIC\DACVolume.X\SLCD/writdata.c
+[v i2_WriteDataSLCD WriteDataSLCD `(v  1 e 0 0 ]
+{
+[v i2WriteDataSLCD@data data `uc  1 a 1 wreg ]
+[v i2WriteDataSLCD@data data `uc  1 a 1 wreg ]
+"19
+[v i2WriteDataSLCD@data data `uc  1 a 1 0 ]
+"64
+} 0
+"11 D:\Prj\PIC\DACVolume.X\SLCD/busyslcd.c
+[v i2_BusySLCD BusySLCD `(uc  1 e 1 0 ]
+{
+"57
+} 0
+"16 D:\Prj\PIC\DACVolume.X\LCDDelay.c
+[v i2_DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+{
+"43
+} 0
