@@ -172,6 +172,7 @@ inline void UpdateMasterVolume(void)
 
 void ChangeMasterVolume(signed char d)
 {
+    if (!POWER) return; //Don't change volume while off
     uint8_t prev = s_dacSettings.Volume;
     s_dacSettings.Volume += d;
     if (d < 0 && prev < s_dacSettings.Volume) s_dacSettings.Volume = 0; //Underflow
@@ -179,15 +180,6 @@ void ChangeMasterVolume(signed char d)
 
     UpdateMasterVolume();
 }
-
-
-/*union UINT16TO8 {
-    uint16_t intval;
-    struct {
-      uint8_t lo; 
-      uint8_t hi; 
-    };
-};*/
 
 void SendDataToDeviceCh(uint8_t offset)
 {
@@ -226,9 +218,15 @@ void SendVolumeToDevice(void)
     DATA_LD_GRP1 = 1;
     SendDataToDeviceCh(0);
     DATA_LD_GRP1 = 0;
+    Nop();
+    Nop();
+    DATA_LD_GRP1 = 1;
     DATA_LD_GRP2 = 1;
     SendDataToDeviceCh(8);
     DATA_LD_GRP2 = 0;
+    Nop();
+    Nop();
+    DATA_LD_GRP2 = 1;
 }
 
 void UpdateSampleRate(void)
